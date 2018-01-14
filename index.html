@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <title>Food delivery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <header class="page-header">
+    <div class="header-top">
+      <div class="container">
+        <div class="header-navigation row">
+          <div class="header-logo col col-lg-3 col-sm-2 col-xs-5">
+            <a href="/">
+              <img class="header-logo__img" srcset="img/logo-small.svg 106w, img/logo.svg 120w" sizes="(max-width: 768px) 106px, (min-width: 769px) 120px" src="img/logo-yu.svg">
+            </a>
+          </div>
+          <form class="header-delivery header-delivery--desctop col col-sm-5 col-xs-12" method="post" action="/main/delivery">
+            <div class="header-delivery__item header-delivery__item--time">
+              <span class="header-delivery__label header-delivery__label--when">When</span>
+              <div class="header-delivery__field header-delivery__field--time" type="button">
+                <span>ASAP</span>
+              </div>
+            </div>
+            <div class="header-delivery__item header-delivery__item--destination">
+              <span class="header-delivery__label header-delivery__label--to">To</span>
+              <div class="header-delivery__field header-delivery__field--destination">
+                <input id="destination" class="header-delivery__input input-reset" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
+              </div>
+            </div>
+          </form>
+          <div class="userLinks col col-lg-4 col-sm-5 col-xs-7">
+            <div class="userLinks__person">
+              <a class="userLinks__btn userLinks__btn--login" href="#"><span>Sign in</span></a>
+              <a class="userLinks__btn userLinks__btn--register" href="#"><span>Register</san></a>
+            </div>
+            <a class="userLinks__basket" href="#">
+                <img src="img/basket-1x.png" srcset="img/basket-1x.png 1x, img/basket-1.5x.png 1.5x, img/basket-2x.png 2x">
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="header-search col col-xs-12">
+            <form class="main-search" method="get" action="/main/search">
+              <input class="main-search__input input-reset" type="text" placeholder="Search for restaurant or cuisine" name="search-request" value>
+            </form>
+          </div>
+        </div>
+        <div class="row">
+          <form class="header-delivery header-delivery--mobile col col-sm-5 col-xs-12" method="post" action="/main/delivery">
+            <div class="header-delivery__item header-delivery__item--time">
+              <span class="header-delivery__label header-delivery__label--when">When</span>
+              <div class="header-delivery__field header-delivery__field--time">
+                <span>ASAP</span>
+              </div>
+            </div>
+            <div class="header-delivery__item header-delivery__item--destination">
+              <span class="header-delivery__label header-delivery__label--to">To</span>
+              <div class="header-delivery__field header-delivery__field--destination">
+                <input id="destination" class="header-delivery__input input-reset" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+  </header>
+
+  <main class="page-content">
+    <div class="page-title">
+      <div class="container">
+        <div class="row">
+          <h1 class="page-title__txt col col-xs-12">Moscow restaurants</h1>
+        </div>
+      </div>
+    </div>
+    <section class="restaurants-list">
+      <div class="container">
+        <div class="row row--wrap">
+          <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
+            <a class="restaurant-card" href="#">
+              <div class="restaurant-card__img restaurant-card__img--macdon">
+              </div>
+              <div class="restaurant-card__name">
+                <span>Макдоналдс — Газетный</span>
+              </div>
+              <div class="restaurant-card__info">
+                <span class="restaurant-card__cost restaurant-card__cost--medium">&#8381;&#8381;</span>
+                <ul class="restaurant-card__cuisines-list list-reset">
+                  <li class="restaurant-card__cuisines-item">
+                    Бургеры
+                  </li>
+                </ul>
+              </div>
+              <span class="restaurant-card__waiting-time">25 - 35 Мin</span>
+            </a>
+          </article>
+          <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
+            <a class="restaurant-card" href="#">
+              <div class="restaurant-card__img restaurant-card__img--dimsum">
+              </div>
+              <div class="restaurant-card__name">
+                <span>DimSum & Co — ЦДМ</span>
+              </div>
+              <div class="restaurant-card__info">
+                <span class="restaurant-card__cost restaurant-card__cost--cheap">&#8381;</span>
+                <ul class="restaurant-card__cuisines-list list-reset">
+                  <li class="restaurant-card__cuisines-item">
+                    	Японская
+                  </li>
+                  <li class="restaurant-card__cuisines-item">
+                    	Китайская
+                  </li>
+                  <li class="restaurant-card__cuisines-item">
+                    	Азиатская
+                  </li>
+                </ul>
+              </div>
+              <span class="restaurant-card__waiting-time">40 - 50 Мin</span>
+            </a>
+          </article>
+          <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
+            <a class="restaurant-card" href="#">
+              <div class="restaurant-card__img restaurant-card__img--dvizok">
+              </div>
+              <div class="restaurant-card__name">
+                <span>ДвижОК — Манежная</span>
+              </div>
+              <div class="restaurant-card__info">
+                <span class="restaurant-card__cost restaurant-card__cost--cheap">&#8381;</span>
+                <ul class="restaurant-card__cuisines-list list-reset">
+                  <li class="restaurant-card__cuisines-item">
+                    	Американская
+                  </li>
+                  <li class="restaurant-card__cuisines-item">
+                    	Европейская
+                  </li>
+                </ul>
+              </div>
+              <span class="restaurant-card__waiting-time">35 - 45 Мin</span>
+            </a>
+          </article>
+          <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
+            <a class="restaurant-card" href="#">
+              <div class="restaurant-card__img restaurant-card__img--nia">
+              </div>
+              <div class="restaurant-card__name">
+                <span>НЯ — NHA</span>
+              </div>
+              <div class="restaurant-card__info">
+                <span class="restaurant-card__cost restaurant-card__cost--medium">&#8381;&#8381;</span>
+                <ul class="restaurant-card__cuisines-list list-reset">
+                  <li class="restaurant-card__cuisines-item">
+                    	Вьетнамская
+                  </li>
+                </ul>
+              </div>
+              <span class="restaurant-card__waiting-time">30 - 40 Мin</span>
+            </a>
+          </article>
+          <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
+            <a class="restaurant-card" href="#">
+              <div class="restaurant-card__img restaurant-card__img--tochkazy">
+              </div>
+              <div class="restaurant-card__name">
+                <span>Точка Дзы — Цветной</span>
+              </div>
+              <div class="restaurant-card__info">
+                <span class="restaurant-card__cost restaurant-card__cost--medium">&#8381;&#8381;</span>
+                <ul class="restaurant-card__cuisines-list list-reset">
+                  <li class="restaurant-card__cuisines-item">
+                    	Вьетнамская
+                  </li>
+                </ul>
+              </div>
+              <span class="restaurant-card__waiting-time">40 - 50 Мin</span>
+            </a>
+          </article>
+          <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
+            <a class="restaurant-card" href="#">
+              <div class="restaurant-card__img restaurant-card__img--cinnabon">
+              </div>
+              <div class="restaurant-card__name">
+                <span>Cinnabon</span>
+              </div>
+              <div class="restaurant-card__info">
+                <span class="restaurant-card__cost restaurant-card__cost--cheap">&#8381;</span>
+                <ul class="restaurant-card__cuisines-list list-reset">
+                  <li class="restaurant-card__cuisines-item">
+                    	Выпечка
+                  </li>
+                  <li class="restaurant-card__cuisines-item">
+                      Десерты
+                  </li>
+                  <li class="restaurant-card__cuisines-item">
+                      Капкейки
+                  </li>
+                </ul>
+              </div>
+              <span class="restaurant-card__waiting-time">25 - 35 Мin</span>
+            </a>
+          </article>
+          <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
+            <a class="restaurant-card" href="#">
+              <div class="restaurant-card__img restaurant-card__img--pizzelove">
+              </div>
+              <div class="restaurant-card__name">
+                <span>PIZZELOVE</span>
+              </div>
+              <div class="restaurant-card__info">
+                <span class="restaurant-card__cost restaurant-card__cost--medium">&#8381;&#8381;</span>
+                <ul class="restaurant-card__cuisines-list list-reset">
+                  <li class="restaurant-card__cuisines-item">
+                    	Пицца
+                  </li>
+                </ul>
+              </div>
+              <span class="restaurant-card__waiting-time">15 - 25 Мin</span>
+            </a>
+          </article>
+          <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
+            <a class="restaurant-card" href="#">
+              <div class="restaurant-card__img restaurant-card__img--zucafe">
+              </div>
+              <div class="restaurant-card__name">
+                <span>Zю кафе — Тверская</span>
+              </div>
+              <div class="restaurant-card__info">
+                <span class="restaurant-card__cost restaurant-card__cost--medium">&#8381;&#8381;</span>
+                <ul class="restaurant-card__cuisines-list list-reset">
+                  <li class="restaurant-card__cuisines-item">
+                    	Японская
+                  </li>
+                </ul>
+              </div>
+              <span class="restaurant-card__waiting-time">25 - 35 Мin</span>
+            </a>
+          </article>
+          <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
+            <a class="restaurant-card" href="#">
+              <div class="restaurant-card__img restaurant-card__img--barbqcafe">
+              </div>
+              <div class="restaurant-card__name">
+                <span>Bar BQ Cafe — Манежная</span>
+              </div>
+              <div class="restaurant-card__info">
+                <span class="restaurant-card__cost restaurant-card__cost--expensive">&#8381;&#8381;&#8381;</span>
+                <ul class="restaurant-card__cuisines-list list-reset">
+                  <li class="restaurant-card__cuisines-item">
+                    	Европейская
+                  </li>
+                </ul>
+              </div>
+              <span class="restaurant-card__waiting-time">30 - 40 Мin</span>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="page-footer__item">
+      <div class="container">
+        <div class="row">
+          <div class="big-logo col col-xs-12">
+            <img class="big-logo__img" src="#">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__item">
+      <div class="container">
+        <div class="row">
+          <div class="social-info col col-sm-4 col-xs-12">
+            <div class="language-options">
+              <select>
+                <option>Русский</option>
+                <option>English</option>
+                <option>Deutsch</option>
+              </select>
+            </div>
+            <div class="hashtag">UberEATS</div>
+            <div class="networks">
+              <a class="networks__link networks__link--fb" href="#"></a>
+              <a class="networks__link networks__link--tw" href="#"></a>
+              <a class="networks__link networks__link--inst" href="#"></a>
+            </div>
+          </div>
+          <nav class="service-navigation col  col-sm-4 col-xs-12">
+            <a class="service-navigation__link" href="#">About UberEats</a>
+            <a class="service-navigation__link" href="#">Become a delivery partner</a>
+            <a class="service-navigation__link" href="#">Become a restaurant partner</a>
+          </nav>
+          <nav class="service-navigation col col-sm-4 col-xs-12">
+            <a class="service-navigation__link" href="#">See all cities</a>
+            <a class="service-navigation__link" href="#">Pricing</a>
+            <a class="service-navigation__link" href="#">Help</a>
+            <a class="service-navigation__link" href="#">FAQs</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__item">
+      <div class="container">
+        <div class="row">
+          <div class="apps">
+            <a class="apps-link" href=#></a>
+            <a class="apps-link" href=#></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page-footer__item">
+      <div class="container">
+        <div class="row">
+          <div class="public_item col col-sm-4 col-xs-12">
+            <span>Uber Technologies Inc.</span>
+          </div>
+          <div class="public_item col col-sm-4 col-xs-12">
+            <a href="#">Privacy</a>
+          </div>
+          <div class="public_item col col-sm-4 col-xs-12">
+            <a href="#">Terms</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>

@@ -1,0 +1,564 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&subset=cyrillic');
+html {
+  box-sizing: border-box;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.col {
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.col-xs-1 {
+  flex-basis: 8.3333%;
+}
+
+.col-xs-2 {
+  flex-basis: 16.6666%;
+}
+
+.col-xs-3 {
+  flex-basis: 24.9999%;
+}
+
+.col-xs-4 {
+  flex-basis: 33.3333%;
+}
+
+.col-xs-5 {
+  flex-basis: 41.6665%;
+}
+
+.col-xs-6 {
+  flex-basis: 49.9998%;
+}
+
+.col-xs-7 {
+  flex-basis: 58.3331%;
+}
+
+.col-xs-8 {
+  flex-basis: 66.6664%;
+}
+
+.col-xs-9 {
+  flex-basis: 74.9997%;
+}
+
+.col-xs-10 {
+  flex-basis: 83.3333%;
+}
+
+.col-xs-11 {
+  flex-basis: 91.6663%;
+}
+
+.col-xs-12 {
+  flex-basis: 100%;
+}
+
+@media(min-width:768px) {
+  .col-sm-1 {
+    flex-basis: 8.3333%;
+  }
+  .col-sm-2 {
+    flex-basis: 16.6666%;
+  }
+  .col-sm-3 {
+    flex-basis: 24.9999%;
+  }
+  .col-sm-4 {
+    flex-basis: 33.3333%;
+  }
+  .col-sm-5 {
+    flex-basis: 41.6665%;
+  }
+  .col-sm-6 {
+    flex-basis: 49.9998%;
+  }
+  .col-sm-7 {
+    flex-basis: 58.3331%;
+  }
+  .col-sm-8 {
+    flex-basis: 66.6664%;
+  }
+  .col-sm-9 {
+    flex-basis: 74.9997%;
+  }
+  .col-sm-10 {
+    flex-basis: 83.3333%;
+  }
+  .col-sm-11 {
+    flex-basis: 91.6663%;
+  }
+  .col-sm-12 {
+    flex-basis: 100%;
+  }
+}
+
+@media(min-width:956px) {
+  .col-lg-1 {
+    flex-basis: 8.3333%;
+  }
+  .col-lg-2 {
+    flex-basis: 16.6666%;
+  }
+  .col-lg-3 {
+    flex-basis: 24.9999%;
+  }
+  .col-lg-4 {
+    flex-basis: 33.3333%;
+  }
+  .col-lg-5 {
+    flex-basis: 41.6665%;
+  }
+  .col-lg-6 {
+    flex-basis: 49.9998%;
+  }
+  .col-lg-7 {
+    flex-basis: 58.3331%;
+  }
+  .col-lg-8 {
+    flex-basis: 66.6664%;
+  }
+  .col-lg-9 {
+    flex-basis: 74.9997%;
+  }
+  .col-lg-10 {
+    flex-basis: 83.3333%;
+  }
+  .col-lg-11 {
+    flex-basis: 91.6663%;
+  }
+  .col-lg-12 {
+    flex-basis: 100%;
+  }
+}
+
+.row {
+  display: flex;
+  margin-right: -4px;
+}
+
+@media(min-width:768px) {
+  .row {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+
+@media(min-width:956px) {
+  .row {
+    margin-left: -11px;
+    margin-right: -5px;
+  }
+}
+
+.row--wrap {
+  flex-wrap: wrap;
+}
+
+.container {
+  max-width: 956px;
+  margin: 0 auto;
+}
+
+.input-reset {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  background: none;
+  border: none;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.header-top {
+  box-shadow: 0 0 16px 0 rgba(38, 38, 38, 0.16);
+  background: #fff;
+}
+
+.header-navigation {
+  height: 72px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*Ordering form on pages*/
+
+.header-delivery {
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.header-delivery--mobile {
+  display: flex;
+}
+
+@media(min-width:768px) {
+  .header-delivery--mobile {
+    display: none;
+  }
+}
+
+.header-delivery--desctop {
+  display: none;
+}
+
+@media(min-width: 768px) {
+  .header-delivery--desctop {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.header-delivery__item {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header-delivery__item:not(:last-child) {
+  margin-right: 16px;
+}
+
+@media(min-width:768px) {
+  .header-delivery__item {
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .header-delivery__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.header-delivery__item--time {
+  flex-basis: 65px;
+}
+
+@media(min-width:768px) and (max-width:956px) {
+  .header-delivery__item--time {
+    flex-basis: 57px;
+  }
+}
+
+.header-delivery__item--destination {
+  flex-grow: 1;
+}
+
+.header-delivery__field {
+  align-items: center;
+  display: flex;
+  height: 40px;
+  color: #1D1D1D;
+  border: 1px solid #E0E0E0;
+  font-size: 13px;
+  flex-grow: 1;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+@media(min-width:956px) {
+  .header-delivery__field {
+    border: 1px solid #57AD56;
+    font-size: 16px;
+  }
+}
+
+.header-delivery__field--time {
+  justify-content: center;
+}
+
+.header-delivery__field--destination {
+  flex-grow: 1;
+  flex-basis: 292px;
+}
+
+.header-delivery__input {
+  width: 100%;
+  padding-left: 24px;
+  background-image: url(../img/location.svg);
+  background-size: 14px 16px;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+}
+
+.header-delivery__label {
+  display: block;
+  font-size: 11px;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+@media(min-width:768px) {
+  .header-delivery__label {
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 0;
+    text-transform: lowercase;
+  }
+}
+
+@media(min-width:768px) and (max-width:956px) {
+  .header-delivery__label {
+    margin-right: 11px;
+  }
+}
+
+@media(min-width:956px) {
+  .header-delivery__label {
+    font-size: 16px;
+  }
+}
+
+@media(min-width:768px) {
+  .header-delivery__label--when {
+    display: none;
+  }
+}
+
+/*User section --> personalization btns and basket*/
+
+.userLinks {
+  display: flex;
+}
+
+.userLinks__basket {
+  display: none;
+}
+
+@media(min-width:768px) {
+  .userLinks__basket {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-self: stretch;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+  }
+}
+
+.userLinks__person {
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+}
+
+.userLinks__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 72px;
+  height: 40px;
+  font-size: 11px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.userLinks__btn:not(:last-child) {
+  margin-right: 12px;
+}
+
+@media(min-width:768px) {
+  .userLinks__btn {
+    flex-basis: 80px;
+    font-size: 13px;
+  }
+  .userLinks__btn:not(:last-child) {
+    margin-right: 16px;
+  }
+}
+
+.userLinks__btn--login {
+  color: #1D1D1D;
+  border: 1px solid #E0E0E0;
+}
+
+@media(min-width:956px) {
+  .userLinks__btn--login {
+    border: 1px solid #57AD56;
+  }
+}
+
+.userLinks__btn--register {
+  color: #fff;
+  background-color: #262626;
+}
+
+/*Search on site*/
+
+.header-search {
+  padding-top: 30px;
+  padding-bottom: 16px;
+}
+
+@media(min-width:768px) {
+  .header-search {
+    padding-bottom: 24px;
+  }
+}
+
+.main-search {
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  height: 50px;
+  border-bottom: 1px solid #757575;
+}
+
+.main-search__input {
+  width: 100%;
+  font-size: 13px;
+  padding-left: 24px;
+  padding-right: 8px;
+  padding-top: 8px;
+  padding-bottom: 12px;
+  background-image: url(../img/search.svg);
+  background-size: 16px, 16px;
+  background-position: 0 8px;
+  background-repeat: no-repeat;
+}
+
+@media(min-width:768px) {
+  .main-search__input {
+    font-size: 16px;
+    padding-left: 30px;
+    background-size: 22px, 22px;
+    background-position: 0 4px;
+  }
+}
+
+/*Page title*/
+
+.page-title {
+  padding-top: 34px;
+  padding-bottom: 14px;
+}
+
+.page-title__txt {
+  font-size: 22px;
+  line-height: 1.545;
+  font-weight: 400;
+  text-transform: capitalize;
+  margin: 0;
+}
+
+/*Restaurant card*/
+
+.restaurants-list {
+  padding-bottom: 64px;
+}
+
+.restaurants__item {
+  margin-bottom: 12px;
+}
+
+.restaurant-card {
+  display: block;
+  text-decoration: none;
+  color: #1D1D1D;
+  padding-bottom: 24px;
+}
+
+.restaurant-card:hover {
+  background-color: #f9f9f9;
+}
+
+.restaurant-card__img {
+  height: 246px;
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-bottom: 15px;
+}
+
+.restaurant-card__img--macdon {
+  background-image: url(../img/macdon.jpg);
+}
+
+.restaurant-card__img--dimsum {
+  background-image: url(../img/dimsum.jpg);
+}
+
+.restaurant-card__img--dvizok {
+  background-image: url(../img/dvizok.jpg);
+}
+
+.restaurant-card__img--nia {
+  background-image: url(../img/nia.jpg);
+}
+
+.restaurant-card__img--tochkazy {
+  background-image: url(../img/tochkazy.jpg);
+}
+
+.restaurant-card__img--cinnabon {
+  background-image: url(../img/cinnabon.jpg);
+}
+
+.restaurant-card__img--pizzelove {
+  background-image: url(../img/pizzelove.jpg);
+}
+
+.restaurant-card__img--zucafe {
+  background-image: url(../img/zucafe.jpg);
+}
+
+.restaurant-card__img--barbqcafe {
+  background-image: url(../img/barbqcafe.jpg);
+}
+
+@media(min-width: 768px) {
+  .restaurant-card__img {
+    height: 256px;
+  }
+}
+
+.restaurant-card__name {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 5px;
+}
+
+.restaurant-card__info {
+  display: flex;
+  color: #626262;
+  margin-bottom: 4px;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.restaurant-card__cost {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.restaurant-card__cuisines-item {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.restaurant-card__cuisines-item:before {
+  content: "\2022";
+}
+
+.restaurant-card__waiting-time {
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/*Page footer*/
+
+.page-footer {
+  background-color: #262626;
+}
