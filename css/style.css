@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Roboto:300,400&subset=cyrillic');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500&subset=cyrillic-ext');
 html {
   box-sizing: border-box;
   font-family: 'Roboto', Arial, sans-serif;
@@ -813,6 +813,7 @@ html {
 @media(max-width:767px) {
   .restaurant-header__inner {
     position: relative;
+    margin-bottom: 56px;
   }
 }
 
@@ -836,6 +837,12 @@ html {
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 24px;
+}
+
+@media(max-width:767px) {
+  .restaurant-header__content {
+    box-shadow:0 0 16px 0 rgba(117, 117, 117, 0.2);
+  }
 }
 
 @media(min-width:768px) {
@@ -911,4 +918,188 @@ html {
   border-radius: 20px;
   height: 32px;
   display: block;
+}
+
+/*restaurant's menu navigation*/
+
+.cuisines-nav-container {
+  display: none;
+}
+
+@media(min-width:768px) {
+  .cuisines-nav-container {
+    display: block;
+  }
+  .cuisines-nav-inner {
+    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  }
+  .cuisines-nav {
+    height: 80px;
+    align-items: center;
+  }
+  .cuisines-nav__item:not(:last-child) {
+    margin-right: 42px;
+  }
+  .cuisines-nav__link {
+    text-decoration: none;
+    color: #626262;
+    font-size: 16px;
+  }
+  .cuisines-nav__link.active {
+    color: #327430;
+  }
+}
+
+/*restaurant menu section*/
+
+.menu-section {
+  padding-top: 32px;
+  padding-bottom: 30px;
+}
+
+.menu-section__title {
+  margin-top: 32px;
+  margin-bottom: 40px;
+  font-size: 22px;
+  line-height: 34px;
+  font-weight: 400;
+  width:100%;
+}
+
+@media(max-width:767px){
+  .menu-section__title {
+    text-align: center;
+    padding-bottom: 8px;
+    background-image:linear-gradient(to right, #757575 50px, transparent 50px);
+    background-size:50px 1px;
+    background-position:50% 100%;
+    background-repeat: no-repeat;
+  }
+}
+
+.menu-section__item{
+  overflow:hidden;
+}
+
+.dish-card {
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  margin-bottom: 16px;
+}
+
+.dish-card:hover {
+  background-color: rgba(117, 117, 117, 0.04);
+}
+
+@media(min-width:768px) {
+  .dish-card {
+    border: 1px solid rgba(117, 117, 117, 0.2);
+    margin-bottom: 32px;
+  }
+}
+
+@media(min-width:956px) {
+  .dish-card {
+    margin-bottom: 50px;
+    color: #1D1D1D;
+  }
+}
+
+.dish-card__content {
+  margin-right: 16px;
+  padding-right: 16px;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow:hidden;
+}
+
+@media(min-width:768px){
+  .dish-card__content {
+    padding-top:20px;
+    padding-left: 16px;
+  }
+}
+
+.dish-card__name {
+  font-size: 14px;
+  line-height: 24px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media(min-width:768px) {
+  .dish-card__name {
+    font-size: 16px;
+  }
+}
+
+.dish-card__name-details{
+  font-size: 13px;
+  color:#626262;
+  line-height:21px;
+}
+
+.dish-card__price {
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 500;
+}
+
+@media(min-width:768px) {
+  .dish-card__price {
+    font-size: 14px;
+  }
+}
+
+.dish-card__photo {
+  width: 102px;
+  min-width: 102px;
+  height: 102px;
+  background-size:cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+@media(min-width:768px) {
+  .dish-card__photo {
+    width: 200px;
+    height: 160px;
+  }
+}
+
+@media(min-width:956px) {
+  .dish-card__photo {
+    width: 160px;
+    height: 160px;
+  }
+}
+
+.dish-card__photo--pushkin-seld{
+  background-image: url(../img/pushkin-seld.jpg);
+}
+
+.dish-card__photo--pushkin-solenia{
+  background-image: url(../img/pushkin-solenia.jpg);
+}
+
+.dish-card__photo--pushkin-griby{
+  background-image: url(../img/pushkin-griby.jpg);
+}
+
+.dish-card__photo--pushkin-salo{
+  background-image: url(../img/pushkin-salo.jpg);
+}
+
+.dish-card__photo--pushkin-semga{
+  background-image: url(../img/pushkin-semga.jpg);
+}
+
+.dish-card__photo--pushkin-iazyk{
+  background-image: url(../img/pushkin-iazyk.jpg);
 }
