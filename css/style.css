@@ -306,6 +306,8 @@ html {
 .header-delivery__field--time {
   justify-content: center;
   -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   background: none;
   cursor:pointer;
 }
