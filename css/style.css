@@ -852,6 +852,9 @@ html {
 }
 
 /*Restaurant page*/
+.page-content--restaurant{
+  padding-top: 72px;
+}
 
 .restaurant-header {
   background-image: url(../img/pushkin.jpg);
