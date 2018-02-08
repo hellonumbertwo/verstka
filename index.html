@@ -5,6 +5,7 @@
   <title>Food delivery</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -36,15 +37,15 @@
             <a href="#">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/logo.svg">
-                <img class="logo" src="img/logo-small.svg" alt="UberEats">
+                <img class="header-logo__img" src="img/logo-small.svg" alt="UberEats">
               </picture>
             </a>
           </div>
-          <form class="header-delivery header-delivery--desctop col col-sm-5 col-xs-12" method="post" action="/main/delivery">
+          <form class="header-delivery header-delivery--desktop col col-sm-5 col-xs-12" method="post" action="/main/delivery">
             <div class="header-delivery__item header-delivery__item--time">
               <span class="header-delivery__label header-delivery__label--when">When</span>
               <button class="header-delivery__field header-delivery__field--time" type="button">
-                <span>ASAP</span>
+                ASAP
               </button>
             </div>
             <div class="header-delivery__item header-delivery__item--destination">
@@ -54,12 +55,12 @@
               </div>
             </div>
           </form>
-          <div class="userLinks col col-lg-4 col-sm-5 col-xs-7">
-            <div class="userLinks__person">
-              <a class="userLinks__btn userLinks__btn--login" href="#"><span>Sign in</span></a>
-              <a class="userLinks__btn userLinks__btn--register" href="#"><span>Register</san></a>
+          <div class="user-links col col-lg-4 col-sm-5 col-xs-7">
+            <div class="user-links__person">
+              <a class="user-links__btn user-links__btn--login" href="#"><span>Sign in</span></a>
+              <a class="user-links__btn user-links__btn--register" href="#"><span>Register</san></a>
             </div>
-            <a class="userLinks__basket" href="#">
+            <a class="user-links__basket" href="#">
               <svg width="20" height="22">
                 <use xlink:href="#basket-icon"></use>
               <svg>
@@ -81,9 +82,9 @@
           <form class="header-delivery header-delivery--mobile col col-sm-5 col-xs-12" method="post" action="/main/delivery">
             <div class="header-delivery__item header-delivery__item--time">
               <span class="header-delivery__label header-delivery__label--when">When</span>
-              <div class="header-delivery__field header-delivery__field--time">
-                <span>ASAP</span>
-              </div>
+              <button class="header-delivery__field header-delivery__field--time">
+                ASAP
+              </button>
             </div>
             <div class="header-delivery__item header-delivery__item--destination">
               <span class="header-delivery__label header-delivery__label--to">To</span>
@@ -109,8 +110,7 @@
         <div class="row row--wrap">
           <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
             <a class="restaurant-card" href="#">
-              <div class="restaurant-card__img restaurant-card__img--macdon">
-              </div>
+              <img class="restaurant-card__img" src="img/macdon.jpg" title="Макдональдс" alt="Доставка еды из ближайшего ресторана Макдоналдс">
               <div class="restaurant-card__name">
                 <span>Макдоналдс — Газетный</span>
               </div>
@@ -129,8 +129,7 @@
           </article>
           <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
             <a class="restaurant-card" href="#">
-              <div class="restaurant-card__img restaurant-card__img--dimsum">
-              </div>
+              <img class="restaurant-card__img" src="img/dimsum.jpg" title="DimSum & Co" alt="Доставка еды из ближайшего ресторана DimSum & Co">
               <div class="restaurant-card__name">
                 <span>DimSum & Co — ЦДМ</span>
               </div>
@@ -155,8 +154,7 @@
           </article>
           <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
             <a class="restaurant-card" href="#">
-              <div class="restaurant-card__img restaurant-card__img--dvizok">
-              </div>
+              <img class="restaurant-card__img" src="img/dvizok.jpg" title="ДвижОК" alt="Доставка еды из ближайшего ресторана ДвижОК">
               <div class="restaurant-card__name">
                 <span>ДвижОК — Манежная</span>
               </div>
@@ -178,8 +176,7 @@
           </article>
           <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
             <a class="restaurant-card" href="#">
-              <div class="restaurant-card__img restaurant-card__img--nia">
-              </div>
+              <img class="restaurant-card__img" src="img/nia.jpg" title="НЯ — NHA" alt="Доставка еды из ближайшего ресторана НЯ — NHA">
               <div class="restaurant-card__name">
                 <span>НЯ — NHA</span>
               </div>
@@ -198,8 +195,7 @@
           </article>
           <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
             <a class="restaurant-card" href="#">
-              <div class="restaurant-card__img restaurant-card__img--tochkazy">
-              </div>
+              <img class="restaurant-card__img" src="img/tochkazy.jpg" title="Точка Дзы" alt="Доставка еды из ближайшего ресторана Точка Дзы">
               <div class="restaurant-card__name">
                 <span>Точка Дзы — Цветной</span>
               </div>
@@ -218,8 +214,7 @@
           </article>
           <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
             <a class="restaurant-card" href="#">
-              <div class="restaurant-card__img restaurant-card__img--cinnabon">
-              </div>
+              <img class="restaurant-card__img" src="img/cinnabon.jpg" title="Cinnabon" alt="Доставка еды из ближайшего ресторана Cinnabon">
               <div class="restaurant-card__name">
                 <span>Cinnabon</span>
               </div>
@@ -244,8 +239,7 @@
           </article>
           <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
             <a class="restaurant-card" href="#">
-              <div class="restaurant-card__img restaurant-card__img--pizzelove">
-              </div>
+              <img class="restaurant-card__img" src="img/pizzelove.jpg" title="PIZZELOVE" alt="Доставка еды из ближайшего ресторана PIZZELOVE">
               <div class="restaurant-card__name">
                 <span>PIZZELOVE</span>
               </div>
@@ -264,8 +258,7 @@
           </article>
           <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
             <a class="restaurant-card" href="#">
-              <div class="restaurant-card__img restaurant-card__img--zucafe">
-              </div>
+              <img class="restaurant-card__img" src="img/zucafe.jpg" title="Zю кафе" alt="Доставка еды из ближайшего ресторана Zю кафе">
               <div class="restaurant-card__name">
                 <span>Zю кафе — Тверская</span>
               </div>
@@ -284,8 +277,7 @@
           </article>
           <article class="restaurants__item col col-lg-4 col-sm-6 col-xs-12">
             <a class="restaurant-card" href="#">
-              <div class="restaurant-card__img restaurant-card__img--barbqcafe">
-              </div>
+              <img class="restaurant-card__img" src="img/barbqcafe.jpg" title="Bar BQ Cafe" alt="Доставка еды из ближайшего ресторана Bar BQ Cafe">
               <div class="restaurant-card__name">
                 <span>Bar BQ Cafe — Манежная</span>
               </div>
@@ -382,7 +374,7 @@
         </div>
       </div>
     </div>
-    <a class="toTop-btn" href="#page-top"></a>
+    <a class="totop-btn" href="#page-top"></a>
   </footer>
 </body>
 

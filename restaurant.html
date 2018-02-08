@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic-ext" rel="stylesheet">
 </head>
 
 <body>
@@ -36,15 +37,15 @@
             <a href="#">
               <picture>
                 <source media="(min-width: 768px)" srcset="img/logo.svg">
-                <img src="img/logo-small.svg" alt="UberEats">
+                <img class="header-logo__img" src="img/logo-small.svg" alt="UberEats">
               </picture>
             </a>
           </div>
-          <form class="header-delivery header-delivery--desctop col col-sm-5 col-xs-12" method="post" action="/main/delivery">
+          <form class="header-delivery header-delivery--desktop col col-sm-5 col-xs-12" method="post" action="/main/delivery">
             <div class="header-delivery__item header-delivery__item--time">
               <span class="header-delivery__label header-delivery__label--when">When</span>
               <button class="header-delivery__field header-delivery__field--time" type="button">
-                <span>ASAP</span>
+                ASAP
               </button>
             </div>
             <div class="header-delivery__item header-delivery__item--destination">
@@ -54,12 +55,12 @@
               </div>
             </div>
           </form>
-          <div class="userLinks col col-lg-4 col-sm-5 col-xs-7">
-            <div class="userLinks__person">
-              <a class="userLinks__btn userLinks__btn--login" href="#"><span>Sign in</span></a>
-              <a class="userLinks__btn userLinks__btn--register" href="#"><span>Register</san></a>
+          <div class="user-links col col-lg-4 col-sm-5 col-xs-7">
+            <div class="user-links__person">
+              <a class="user-links__btn user-links__btn--login" href="#"><span>Sign in</span></a>
+              <a class="user-links__btn user-links__btn--register" href="#"><span>Register</san></a>
             </div>
-            <a class="userLinks__basket" href="#">
+            <a class="user-links__basket" href="#">
               <svg width="20" height="22">
                 <use xlink:href="#basket-icon"></use>
               <svg>
@@ -71,7 +72,7 @@
   </header>
 
   <main class="page-content--restaurant">
-    <div class="biger-container">
+    <!--<div class="biger-container">-->
       <section class="restaurant-header">
         <div class="container">
           <div class="restaurant-header__inner row">
@@ -100,9 +101,9 @@
           </div>
         </div>
       </section>
-    </div>
+    <!--</div>-->
     <section class="cuisines-nav-container">
-      <div class="cuisines-nav-inner biger-container">
+      <div class="cuisines-nav-inner">
         <div class="container">
           <div class="row">
             <ul class="cuisines-nav col">
@@ -280,7 +281,7 @@
         </div>
       </div>
     </div>
-    <a class="toTop-btn" href="#page-top"></a>
+    <a class="totop-btn" href="#page-top"></a>
   </footer>
 </body>
 
