@@ -12,7 +12,7 @@ html {
   padding-right: 4px;
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
   .col {
     padding-left: 8px;
     padding-right: 8px;
@@ -206,27 +206,27 @@ html {
   background: #fff;
   position: fixed;
   z-index: 1000;
-  width:100%;
-  top:0;
+  width: 100%;
+  top: 0;
 }
 
-.header-top__inner {
+.header-top__item {
+  display: flex;
   height: 72px;
   align-items: center;
-  justify-content: space-between;
 }
 
-.header-logo__img{
-  width:106px;
+.header-logo__img {
+  width: 106px;
 }
 
-@media(min-width:956px){
-  .header-logo__img{
-    width:120px;
+@media(min-width:956px) {
+  .header-logo__img {
+    width: 120px;
   }
 }
 
-.header-bottom{
+.header-bottom {
   padding-top: 72px;
 }
 
@@ -235,6 +235,7 @@ html {
 .header-delivery {
   padding-top: 8px;
   padding-bottom: 8px;
+  flex-grow: 1;
 }
 
 .header-delivery--mobile {
@@ -255,6 +256,8 @@ html {
   .header-delivery--desktop {
     display: flex;
     align-items: center;
+    padding-left: 8px;
+    padding-right: 8px;
   }
 }
 
@@ -302,12 +305,12 @@ html {
   -moz-appearance: none;
   appearance: none;
   background: none;
-  cursor:pointer;
+  cursor: pointer;
   padding-left: 14px;
   padding-right: 13px
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
   .header-delivery__field--time {
     padding-left: 10px;
     padding-right: 10px
@@ -316,8 +319,8 @@ html {
 
 .header-delivery__field--destination {
   flex-grow: 1;
-  padding-left:9px;
-  padding-right:9px;
+  padding-left: 9px;
+  padding-right: 9px;
 }
 
 .header-delivery__input {
@@ -333,7 +336,7 @@ html {
   font-size: 11px;
   text-transform: capitalize;
   margin-bottom: 8px;
-  margin-right:10px;
+  margin-right: 10px;
 }
 
 @media(min-width:768px) {
@@ -359,10 +362,6 @@ html {
 
 /*User section --> personalization btns and basket*/
 
-.user-links {
-  display: flex;
-}
-
 .user-links__basket {
   display: none;
 }
@@ -372,7 +371,6 @@ html {
     display: flex;
     align-items: center;
     justify-content: center;
-    align-self: stretch;
     width: 40px;
     height: 40px;
     margin-left: 16px;
@@ -523,7 +521,7 @@ html {
 
 .restaurant-card__img {
   display: block;
-  width:100%;
+  width: 100%;
   height: 246px;
   margin-bottom: 15px;
 }
@@ -587,7 +585,7 @@ html {
 }
 
 .page-footer__item--customer-links {
-  padding-top:33px;
+  padding-top: 33px;
   padding-bottom: 25px;
 }
 
@@ -610,20 +608,27 @@ html {
 
 @media(min-width:768px) {
   .page-footer__item--apps {
-    padding-top:41px;
+    padding-top: 41px;
     padding-bottom: 39px;
   }
 }
 
 .page-footer__item--footer-bottom {
-  padding-top:40px;
-  padding-bottom:16px;
+  padding-top: 40px;
+  padding-bottom: 16px;
 }
 
 .lang-and-networks {
   margin-bottom: 33px;
   margin-left: 0;
   margin-right: auto;
+  padding-right: 43.8%;
+}
+
+@media(min-width:768px) {
+  .lang-and-networks {
+    padding-right: 26.3%;
+  }
 }
 
 .language-options {
@@ -668,7 +673,7 @@ html {
   font-size: 13px;
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
   .language-options {
     padding-right: 8px;
   }
@@ -771,15 +776,15 @@ html {
 
 /*button UP*/
 
-.totop-btn{
+.totop-btn {
   display: block;
   position: absolute;
-  z-index:100;
-  width:64px;
-  height:64px;
-  bottom:24px;
-  right:16px;
-  background-color:#59BD5A;
+  z-index: 100;
+  width: 64px;
+  height: 64px;
+  bottom: 24px;
+  right: 16px;
+  background-color: #59BD5A;
   text-decoration: none;
   background-image: url(../img/up-arrow.svg);
   background-size: 16px 26px;
@@ -787,24 +792,25 @@ html {
   background-position: 50% 50%;
 }
 
-@media(min-width:768px){
-  .totop-btn{
-    width:80px;
-    height:80px;
+@media(min-width:768px) {
+  .totop-btn {
+    width: 80px;
+    height: 80px;
   }
 }
 
-@media(min-width:1024px){
-  .totop-btn{
-    width:80px;
-    height:80px;
-    left:calc(50% + 466px);
-    right:auto;
+@media(min-width:1024px) {
+  .totop-btn {
+    width: 80px;
+    height: 80px;
+    left: calc(50% + 466px);
+    right: auto;
   }
 }
 
 /*Restaurant page*/
-.page-content--restaurant{
+
+.page-content--restaurant {
   padding-top: 72px;
 }
 
@@ -813,7 +819,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  margin-bottom:56px;
+  margin-bottom: 56px;
 }
 
 @media(min-width:768px) {
@@ -831,32 +837,24 @@ html {
   }
 }
 
-.restaurant-header__inner {
+.restaurant-header__content {
   position: relative;
-  height:255px;
+  height: 255px;
 }
 
 @media(min-width:768px) {
-  .restaurant-header__inner {
+  .restaurant-header__content {
     padding-top: 80px;
     height: 364px;
-  }
-}
-
-.restaurant-header__content{
-  position: absolute;
-  z-index:10;
-  bottom:-56px;
-  width:100%;
-}
-
-@media(min-width:768px){
-  .restaurant-header__content{
     position: static;
   }
 }
 
-.restaurant-header__card{
+.restaurant-header__card {
+  position: absolute;
+  bottom: -56px;
+  width: 100%;
+  z-index: 10;
   background-color: #fff;
   padding-top: 24px;
   padding-left: 32px;
@@ -867,11 +865,12 @@ html {
 
 @media(min-width:768px) {
   .restaurant-header__card {
+    position: static;
     padding-top: 40px;
     padding-left: 48px;
     padding-right: 48px;
     padding-bottom: 38px;
-    box-shadow:none;
+    box-shadow: none;
   }
 }
 
@@ -939,7 +938,7 @@ html {
   padding-left: 16px;
   padding-top: 5px;
   padding-bottom: 5px;
-  padding-right:5px;
+  padding-right: 5px;
   border-radius: 20px;
   height: 32px;
   display: block;
@@ -961,6 +960,7 @@ html {
   .cuisines-nav {
     height: 80px;
     padding-top: 32px;
+    padding-left: 0;
     display: flex;
     list-style: none;
     margin: 0;
@@ -1012,7 +1012,7 @@ html {
   }
 }
 
-.menu-section__title-decorator{
+.menu-section__title-decorator {
   display: block;
   text-align: center;
   padding-bottom: 13px;
@@ -1024,8 +1024,8 @@ html {
   padding-left: 12px;
 }
 
-@media(min-width:768px){
-  .menu-section__title-decorator{
+@media(min-width:768px) {
+  .menu-section__title-decorator {
     text-align: left;
     padding: 0;
     background: none;
@@ -1033,15 +1033,12 @@ html {
 }
 
 
-.menu-section__item {
-  overflow: hidden;
-}
-
 .dish-card {
   display: flex;
   align-items: stretch;
   justify-content: space-between;
   margin-bottom: 16px;
+  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
 }
 
 .dish-card:hover {
@@ -1067,9 +1064,7 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  overflow: hidden;
   flex-grow: 1;
-  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
 }
 
 @media(min-width:768px) {
@@ -1090,7 +1085,15 @@ html {
 .dish-card__name {
   font-size: 14px;
   line-height: 24px;
+  height: 24px;
   margin-bottom: 5px;
+  position: relative;
+}
+
+.dish-card__name-inner {
+  display: block;
+  position: absolute;
+  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;

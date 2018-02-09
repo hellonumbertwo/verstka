@@ -32,21 +32,23 @@
   <header class="page-header" id="page-top">
     <div class="header-top">
       <div class="container">
-        <div class="header-top__inner row">
-          <div class="header-logo col col-lg-3 col-sm-2 col-xs-5">
-            <a href="#">
-              <picture>
-                <source media="(min-width: 768px)" srcset="img/logo.svg">
-                <img class="header-logo__img" src="img/logo-small.svg" alt="UberEats">
-              </picture>
-            </a>
+        <div class="row">
+          <div class="col col-xs-5 col-sm-2 col-lg-3">
+            <div class="header-top__item header-logo">
+              <a href="#">
+                <picture>
+                  <source media="(min-width: 768px)" srcset="img/logo.svg">
+                  <img class="header-logo__img" src="img/logo-small.svg" alt="UberEats">
+                </picture>
+              </a>
+            </div>
           </div>
-          <form class="header-delivery header-delivery--desktop col col-sm-5 col-xs-12" method="post" action="/main/delivery">
+          <form class="header-top__item header-delivery header-delivery--desktop" method="post" action="/main/delivery">
             <div class="header-delivery__item header-delivery__item--time">
               <span class="header-delivery__label header-delivery__label--when">When</span>
               <button class="header-delivery__field header-delivery__field--time" type="button">
-                ASAP
-              </button>
+                  ASAP
+                </button>
             </div>
             <div class="header-delivery__item header-delivery__item--destination">
               <span class="header-delivery__label header-delivery__label--to">To</span>
@@ -55,16 +57,18 @@
               </div>
             </div>
           </form>
-          <div class="user-links col col-lg-4 col-sm-5 col-xs-7">
-            <div class="user-links__person">
-              <a class="user-links__btn user-links__btn--login" href="#"><span>Sign in</span></a>
-              <a class="user-links__btn user-links__btn--register" href="#"><span>Register</san></a>
+          <div class="col col-xs-7 col-sm-5 col-lg-4">
+            <div class="user-links header-top__item ">
+              <div class="user-links__person">
+                <a class="user-links__btn user-links__btn--login" href="#"><span>Sign in</span></a>
+                <a class="user-links__btn user-links__btn--register" href="#"><span>Register</san></a>
+              </div>
+              <a class="user-links__basket" href="#">
+                  <svg width="20" height="22">
+                    <use xlink:href="#basket-icon"></use>
+                  <svg>
+                </a>
             </div>
-            <a class="user-links__basket" href="#">
-              <svg width="20" height="22">
-                <use xlink:href="#basket-icon"></use>
-              <svg>
-            </a>
           </div>
         </div>
       </div>
@@ -72,11 +76,11 @@
   </header>
 
   <main class="page-content--restaurant">
-    <!--<div class="biger-container">-->
-      <section class="restaurant-header">
-        <div class="container">
-          <div class="restaurant-header__inner row">
-            <div class="restaurant-header__content col col-lg-5 col-sm-7">
+    <section class="restaurant-header">
+      <div class="container">
+        <div class="row">
+          <div class="col col-xs-12 col-sm-7  col-lg-5">
+            <div class="restaurant-header__content">
               <div class="restaurant-header__card">
                 <h1 class="restaurant-title">
                   Трактир &#171;Пушкин&#187;
@@ -100,20 +104,23 @@
             </div>
           </div>
         </div>
-      </section>
-    <!--</div>-->
+      </div>
+    </section>
+
     <section class="cuisines-nav-container">
       <div class="cuisines-nav-inner">
         <div class="container">
           <div class="row">
-            <ul class="cuisines-nav col">
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link active" href="#">Закуски</a></li>
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Салаты</a></li>
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Супы</a></li>
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Горячие блюда</a></li>
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Гарниры</a></li>
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Десерты</a></li>
-            </ul>
+            <div class="col col-sm-12">
+              <ul class="cuisines-nav">
+                <li class="cuisines-nav__item"><a class="cuisines-nav__link active" href="#">Закуски</a></li>
+                <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Салаты</a></li>
+                <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Супы</a></li>
+                <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Горячие блюда</a></li>
+                <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Гарниры</a></li>
+                <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Десерты</a></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -122,16 +129,20 @@
     <section>
       <div class="menu-section container">
         <div class="row">
-          <h2 class="menu-section__title col">
-            <span class="menu-section__title-decorator">Закуски</span>
+          <div class="col col-xs-12">
+            <h2 class="menu-section__title">
+              <span class="menu-section__title-decorator">Закуски</span>
             </h2>
+          </div>
         </div>
         <div class="row row--wrap">
-          <div class="menu-section__item col col-lg-6 col-xs-12">
+          <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">Сельдь на бородинском хлебе</div>
+                  <div class="dish-card__name">
+                    <span class="dish-card__name-inner">Сельдь на бородинском хлебе</span>
+                  </div>
                   <div class="dish-card__name-details">С яйцом и огурцом</div>
                 </div>
                 <div class="dish-card__price">240 &#8381;</div>
@@ -140,11 +151,13 @@
               </div>
             </article>
           </div>
-          <div class="menu-section__item col col-lg-6 col-xs-12">
+          <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">Соленья ассорти</div>
+                  <div class="dish-card__name">
+                    <span class="dish-card__name-inner">Соленья ассорти</span>
+                  </div>
                 </div>
                 <div class="dish-card__price">320 &#8381;</div>
               </div>
@@ -152,11 +165,13 @@
               </div>
             </article>
           </div>
-          <div class="menu-section__item col col-lg-6 col-xs-12">
+          <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">Грибы маринованные</div>
+                  <div class="dish-card__name">
+                    <span class="dish-card__name-inner">Грибы маринованные</span>
+                  </div>
                 </div>
                 <div class="dish-card__price">300 &#8381;</div>
               </div>
@@ -164,11 +179,13 @@
               </div>
             </article>
           </div>
-          <div class="menu-section__item col col-lg-6 col-xs-12">
+          <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">Сало домашнее с горчицей</div>
+                  <div class="dish-card__name">
+                    <span class="dish-card__name-inner">Сало домашнее с горчицей</span>
+                  </div>
                 </div>
                 <div class="dish-card__price">320 &#8381;</div>
               </div>
@@ -176,11 +193,13 @@
               </div>
             </article>
           </div>
-          <div class="menu-section__item col col-lg-6 col-xs-12">
+          <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">Малосольная семга</div>
+                  <div class="dish-card__name">
+                    <span class="dish-card__name-inner">Малосольная семга</span>
+                  </div>
                 </div>
                 <div class="dish-card__price">390 &#8381;</div>
               </div>
@@ -188,11 +207,13 @@
               </div>
             </article>
           </div>
-          <div class="menu-section__item col col-lg-6 col-xs-12">
+          <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">Язык говяжий с хреном</div>
+                  <div class="dish-card__name">
+                    <span class="dish-card__name-inner">Язык говяжий с хреном</span>
+                  </div>
                 </div>
                 <div class="dish-card__price">350 &#8381;</div>
               </div>
@@ -203,62 +224,67 @@
         </div>
       </div>
     </section>
-
   </main>
 
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__item page-footer__item--footer-top">
-        <div class="page-footer__item-inner row">
-          <div class="big-logo col col-xs-12">
-            <img class="big-logo__img" src="img/big-logo.svg" width="192" height="21">
+        <div class="row">
+          <div class="col col-xs-12">
+            <img class="big-logo" src="img/big-logo.svg" width="192" height="21">
           </div>
         </div>
       </div>
       <div class="page-footer__item page-footer__item--customer-links">
-        <div class="page-footer__item-inner row row--wrap">
-          <div class="lang-and-networks col col-lg-3 col-sm-3 col-xs-7">
-            <form class="language-options">
-              <select class="language-options__select select-reset">
-                  <option>English</option>
-                  <option>Русский</option>
-                  <option>Deutsch</option>
-                </select>
-            </form>
-            <div class="hashtag"><span class="hashtag-sign">#</span>UberEats</div>
-            <div class="networks">
-              <a class="networks__link networks__link--fb" href="#">
-                <svg width="18" height="18">
-                  <use xlink:href="#facebook-icon"></use>
-                </svg>
-              </a>
-              <a class="networks__link networks__link--tw" href="#">
-                <svg width="18" height="15">
-                  <use xlink:href="#twitter-icon"></use>
-                </svg>
-              </a>
-              <a class="networks__link networks__link--inst" href="#">
-                <svg width="18" height="18">
-                  <use xlink:href="#instagram-icon"></use>
-                </svg>
-              </a>
+        <div class="row row--wrap">
+          <div class="col col-xs-12 col-sm-3 col-lg-4">
+            <div class="lang-and-networks">
+              <form class="language-options">
+                <select class="language-options__select select-reset">
+                    <option>English</option>
+                    <option>Русский</option>
+                    <option>Deutsch</option>
+                  </select>
+              </form>
+              <div class="hashtag"><span class="hashtag-sign">#</span>UberEats</div>
+              <div class="networks">
+                <a class="networks__link networks__link--fb" href="#">
+                    <svg width="18" height="18">
+                      <use xlink:href="#facebook-icon"></use>
+                    </svg>
+                  </a>
+                <a class="networks__link networks__link--tw" href="#">
+                    <svg width="18" height="15">
+                      <use xlink:href="#twitter-icon"></use>
+                    </svg>
+                  </a>
+                <a class="networks__link networks__link--inst" href="#">
+                    <svg width="18" height="18">
+                      <use xlink:href="#instagram-icon"></use>
+                    </svg>
+                  </a>
+              </div>
             </div>
           </div>
-          <nav class="service-navigation col  col-sm-4 col-xs-12">
-            <a class="service-navigation__link" href="#">About UberEats</a>
-            <a class="service-navigation__link" href="#">Become a Delivery Partner</a>
-            <a class="service-navigation__link" href="#">Become a Restaurant Partner</a>
-          </nav>
-          <nav class="service-navigation col col-sm-4 col-xs-12">
-            <a class="service-navigation__link" href="#">See all cities</a>
-            <a class="service-navigation__link" href="#">Pricing</a>
-            <a class="service-navigation__link" href="#">Help</a>
-            <a class="service-navigation__link" href="#">FAQs</a>
-          </nav>
+          <div class="col col-xs-12 col-sm-4">
+            <nav class="service-navigation">
+              <a class="service-navigation__link" href="#">About UberEats</a>
+              <a class="service-navigation__link" href="#">Become a Delivery Partner</a>
+              <a class="service-navigation__link" href="#">Become a Restaurant Partner</a>
+            </nav>
+          </div>
+          <div class="col col-xs-12 col-sm-4">
+            <nav class="service-navigation">
+              <a class="service-navigation__link" href="#">See all cities</a>
+              <a class="service-navigation__link" href="#">Pricing</a>
+              <a class="service-navigation__link" href="#">Help</a>
+              <a class="service-navigation__link" href="#">FAQs</a>
+            </nav>
+          </div>
         </div>
       </div>
       <div class="page-footer__item page-footer__item--apps">
-        <div class="apps">
+       <div class="apps">
           <a class="apps-link" href=#>
               <img class="apps-link__img" src="img/app_store.png" height="40" width="135">
           </a>
@@ -268,15 +294,21 @@
         </div>
       </div>
       <div class="page-footer__item page-footer__item--footer-bottom">
-        <div class="page-footer__item-inner row row--wrap">
-          <div class="footer-bottom__item col col-sm-4 col-xs-12">
-            <span>&copy; 2017 Uber Technologies Inc.</span>
+        <div class="row row--wrap">
+          <div class="col col-xs-12 col-sm-4">
+            <div class="footer-bottom__item">
+              <span>&copy; 2017 Uber Technologies Inc.</span>
+            </div>
           </div>
-          <div class="footer-bottom__item col col-sm-4 col-xs-12">
-            <a class="footer-bottom__link" href="#">Privacy</a>
+          <div class="col col-xs-12 col-sm-4">
+            <div class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">Privacy</a>
+            </div>
           </div>
-          <div class="footer-bottom__item col col-sm-4 col-xs-12">
-            <a class="footer-bottom__link" href="#">Terms</a>
+          <div class="col col-xs-12 col-sm-4">
+            <div class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">Terms</a>
+            </div>
           </div>
         </div>
       </div>
