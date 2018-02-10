@@ -1,0 +1,24 @@
+{
+  "name": "UBER_eats",
+  "version": "1.0.0",
+  "description": "Хочу научиться верстке",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hellonumbertwo/verstka.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hellonumbertwo/verstka/issues"
+  },
+  "homepage": "https://github.com/hellonumbertwo/verstka#readme",
+  "dependencies": {
+    "postcss": "^6.0.17",
+    "postcss-cssnext": "^3.1.0"
+  }
+}
