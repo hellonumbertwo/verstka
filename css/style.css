@@ -99,7 +99,7 @@ html {
   }
 }
 
-@media(min-width:956px) {
+@media(min-width:972px) {
   .col-lg-1 {
     flex-basis: 8.3333%;
   }
@@ -141,7 +141,7 @@ html {
 .row {
   display: flex;
   margin-left: -8px;
-  margin-right:-8px;
+  margin-right: -8px;
 }
 
 .row--wrap {
@@ -149,10 +149,10 @@ html {
 }
 
 .container {
-  max-width: 956px;
-  margin: 0 auto;
-  padding-left:8px;
+  max-width: 972px;
+  padding-left: 8px;
   padding-right: 8px;
+  margin: 0 auto;
 }
 
 .input-reset {
@@ -193,7 +193,7 @@ html {
   width: 106px;
 }
 
-@media(min-width:956px) {
+@media(min-width:972px) {
   .header-logo__img {
     width: 120px;
   }
@@ -267,7 +267,7 @@ html {
   font-size: 13px;
 }
 
-@media(min-width:956px) {
+@media(min-width:972px) {
   .header-delivery__field {
     font-size: 16px;
   }
@@ -317,7 +317,7 @@ html {
   }
 }
 
-@media(min-width:956px) {
+@media(min-width:972px) {
   .header-delivery__label {
     font-size: 16px;
   }
@@ -452,7 +452,7 @@ html {
   padding-bottom: 32px;
 }
 
-@media(min-width:956px) {
+@media(min-width:972px) {
   .restaurants-list {
     padding-bottom: 64px;
   }
@@ -550,7 +550,7 @@ html {
   }
 }
 
-@media(min-width:956px) {
+@media(min-width:972px) {
   .page-footer__item--customer-links {
     padding-bottom: 22px;
   }
@@ -611,7 +611,7 @@ html {
   margin-bottom: 16px;
 }
 
-@media(min-width:956px) {
+@media(min-width:972px) {
   .hashtag {
     margin-bottom: 17px;
   }

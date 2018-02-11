@@ -48,7 +48,8 @@
   padding-left: 32px;
   padding-right: 32px;
   padding-bottom: 24px;
-  box-shadow: 0 0 16px 0 rgba(117, 117, 117, 0.2);
+  -webkit-box-shadow: 0 0 16px 0 rgba(117, 117, 117, .2);
+          box-shadow: 0 0 16px 0 rgba(117, 117, 117, .2);
 }
 
 @media(min-width:768px) {
@@ -58,7 +59,8 @@
     padding-left: 48px;
     padding-right: 48px;
     padding-bottom: 38px;
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
 }
 
@@ -89,14 +91,22 @@
 
 @media(min-width:768px) {
   .restaurant-information {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-between;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
   }
 }
 
 .restaurant-information__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .restaurant-information__item:not(.restaurant-information__item--waiting) {
@@ -115,7 +125,9 @@
 
 @media(min-width:768px) {
   .restaurant-information__item {
-    justify-content: flex-start;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
   }
 }
 
@@ -143,12 +155,14 @@
     display: block;
   }
   .cuisines-nav-inner {
-    border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+    border-bottom: 1px solid rgba(117, 117, 117, .2);
   }
   .cuisines-nav {
     height: 80px;
     padding-top: 32px;
     padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     margin: 0;
@@ -222,21 +236,27 @@
 
 
 .dish-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: stretch;
-  justify-content: space-between;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   margin-bottom: 16px;
-  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  border-bottom: 1px solid rgba(117, 117, 117, .2);
 }
 
 .dish-card:hover {
-  background-color: rgba(117, 117, 117, 0.04);
+  background-color: rgba(117, 117, 117, .04);
 }
 
 @media(min-width:768px) {
   .dish-card {
     margin-bottom: 32px;
-    border: 1px solid rgba(117, 117, 117, 0.2);
+    border: 1px solid rgba(117, 117, 117, .2);
   }
 }
 
@@ -250,10 +270,19 @@
 .dish-card__content {
   padding-right: 16px;
   padding-bottom: 14px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  flex-grow: 1;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 @media(min-width:768px) {
