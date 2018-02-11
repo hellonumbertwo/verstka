@@ -316,9 +316,10 @@ html {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-  }
-  .header-delivery__item:not(:last-child) {
     margin-right: 10px;
+  }
+  .header-delivery__item:last-child {
+    margin-right: 0;
   }
 }
 
@@ -379,6 +380,10 @@ html {
   background-size: 14px 16px;
   background-position: 10px 50%;
   background-repeat: no-repeat;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: block;
+  width: 100%;
 }
 
 .header-delivery__label {
@@ -460,10 +465,11 @@ html {
   font-size: 11px;
   text-decoration: none;
   text-transform: capitalize;
+  margin-right: 12px
 }
 
-.user-links__btn:not(:last-child) {
-  margin-right: 12px;
+.user-links__btn:last-child {
+  margin-right: 0;
 }
 
 @media(min-width:768px) {
@@ -471,8 +477,6 @@ html {
     -ms-flex-preferred-size: 80px;
         flex-basis: 80px;
     font-size: 13px;
-  }
-  .user-links__btn:not(:last-child) {
     margin-right: 16px;
   }
 }
@@ -639,8 +643,12 @@ html {
   position: relative;
 }
 
-.page-footer__item:not(:last-child) {
+.page-footer__item {
   border-bottom: 1px solid #979797;
+}
+
+.page-footer__item:last-child {
+  border-bottom: none;
 }
 
 .page-footer__item--footer-top {
@@ -686,13 +694,6 @@ html {
   margin-bottom: 33px;
   margin-left: 0;
   margin-right: auto;
-  padding-right: 43.8%;
-}
-
-@media(min-width:768px) {
-  .lang-and-networks {
-    padding-right: 26.3%;
-  }
 }
 
 .language-options {
@@ -701,7 +702,7 @@ html {
 
 .language-options__select {
   display: block;
-  width: 100%;
+  width: 58.33%;
   height: 40px;
   text-transform: uppercase;
   color: #fff;
@@ -712,6 +713,12 @@ html {
   background-image: url(../../img/world.svg), url(../../img/arrow.svg);
   background-repeat: no-repeat;
   background-position: left 24px center, right 8px center;
+}
+
+@media(min-width:768px) {
+  .language-options__select {
+    width: 75%;
+  }
 }
 
 .hashtag {
@@ -752,8 +759,12 @@ html {
           justify-content: center;
 }
 
-.networks__link:not(:first-child) {
+.networks__link {
   margin-left: 12px;
+}
+
+.networks__link:first-child {
+  margin-left: 0;
 }
 
 @media(min-width: 768px) {
@@ -772,10 +783,11 @@ html {
   text-decoration: none;
   font-size: 13px;
   line-height: 2.1;
+  margin-bottom: 12px;
 }
 
-.service-navigation__link:not(:last-child) {
-  margin-bottom: 12px;
+.service-navigation__link:last-child {
+  margin-bottom: 0;
 }
 
 .apps {
