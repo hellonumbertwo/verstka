@@ -4,7 +4,7 @@
 <head>
   <title>Food delivery</title>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic-ext" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="build/css/style.css">
@@ -52,9 +52,7 @@
             </div>
             <div class="header-delivery__item header-delivery__item--destination">
               <span class="header-delivery__label header-delivery__label--to">To</span>
-              <div class="header-delivery__field header-delivery__field--destination">
-                <input id="destination" class="header-delivery__input input-reset" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
-              </div>
+              <input id="destination" class="header-delivery__field header-delivery__field--destination header-delivery__input input-reset" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
             </div>
           </form>
           <div class="col col-xs-7 col-sm-5 col-lg-4">
@@ -95,9 +93,7 @@
               </div>
               <div class="header-delivery__item header-delivery__item--destination">
                 <span class="header-delivery__label header-delivery__label--to">To</span>
-                <div class="header-delivery__field header-delivery__field--destination">
-                  <input id="destination" class="header-delivery__input input-reset" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
-                </div>
+                <input id="destination" class="header-delivery__field header-delivery__field--destination header-delivery__input input-reset" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
               </div>
             </form>
           </div>
@@ -338,10 +334,10 @@
       </div>
       <div class="page-footer__item page-footer__item--customer-links">
         <div class="row row--wrap">
-          <div class="col col-xs-12 col-sm-3 col-lg-4">
+          <div class="col col-xs-12 col-sm-4">
             <div class="lang-and-networks">
               <form class="language-options">
-                <select class="language-options__select select-reset">
+                <select class="language-options__select select-reset" id="select">
                     <option>English</option>
                     <option>Русский</option>
                     <option>Deutsch</option>
@@ -385,7 +381,7 @@
         </div>
       </div>
       <div class="page-footer__item page-footer__item--apps">
-       <div class="apps">
+        <div class="apps">
           <a class="apps-link" href=#>
               <img class="apps-link__img" src="img/app_store.png" height="40" width="135">
           </a>
