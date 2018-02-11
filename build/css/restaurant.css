@@ -246,7 +246,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 16px;
-  border: 1px solid rgba(117, 117, 117, .2);
+  border-bottom: 1px solid rgba(117, 117, 117, .2);
 }
 
 .dish-card:hover {
@@ -256,6 +256,7 @@
 @media(min-width:768px) {
   .dish-card {
     margin-bottom: 32px;
+    border: 1px solid rgba(117, 117, 117, .2);
   }
 }
 
