@@ -237,10 +237,11 @@ html {
 .header-delivery__item {
   display: flex;
   flex-direction: column;
+  margin-right: 16px;
 }
 
-.header-delivery__item:not(:last-child) {
-  margin-right: 16px;
+.header-delivery__item:last-child {
+  margin-right: 0;
 }
 
 @media(min-width:768px) {
@@ -380,12 +381,6 @@ html {
   color: #1D1D1D;
   border: 1px solid #E0E0E0;
 }
-
-/*@media(min-width:956px) {
-  .user-links__btn--login {
-    border: 1px solid #57AD56;
-  }
-}*/
 
 .user-links__btn--register {
   color: #fff;
