@@ -226,7 +226,7 @@
   align-items: stretch;
   justify-content: space-between;
   margin-bottom: 16px;
-  border-bottom: 1px solid rgba(117, 117, 117, 0.2);
+  border: 1px solid rgba(117, 117, 117, 0.2);
 }
 
 .dish-card:hover {
@@ -259,7 +259,6 @@
   .dish-card__content {
     padding-top: 14px;
     padding-left: 23px;
-    border: 1px solid rgba(117, 117, 117, 0.2);
     border-right: none;
   }
 }
