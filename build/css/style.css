@@ -568,15 +568,12 @@ html {
   }
 }
 
-.restaurants__item {
-  margin-bottom: 13px;
-}
-
 .restaurant-card {
   display: block;
+  padding-bottom: 24px;
+  margin-bottom: 16px;
   text-decoration: none;
   color: #1D1D1D;
-  padding-bottom: 24px;
 }
 
 .restaurant-card:hover {
@@ -604,13 +601,17 @@ html {
   margin-bottom: 5px;
 }
 
+.restaurant-card__info {
+  margin-bottom: 5px;
+}
+
 .restaurant-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  color: #626262;
   font-size: 14px;
   line-height: 1.5;
+  color: #626262;
 }
 
 .restaurant-info__cost {
@@ -628,12 +629,8 @@ html {
 }
 
 .restaurant-card__waiting-time {
-  line-height: 1.5;
-}
-
-.restaurant-waiting {
   font-size: 13px;
-  line-height: 1.56;
+  line-height: 1.62;
 }
 
 /*Page footer*/
@@ -658,19 +655,7 @@ html {
 
 .page-footer__item--customer-links {
   padding-top: 33px;
-  padding-bottom: 25px;
-}
-
-@media(min-width:768px) {
-  .page-footer__item--customer-links {
-    padding-bottom: 23px;
-  }
-}
-
-@media(min-width:972px) {
-  .page-footer__item--customer-links {
-    padding-bottom: 22px;
-  }
+  padding-bottom: 24px;
 }
 
 .page-footer__item--apps {
@@ -680,8 +665,8 @@ html {
 
 @media(min-width:768px) {
   .page-footer__item--apps {
-    padding-top: 41px;
-    padding-bottom: 39px;
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 
@@ -691,24 +676,23 @@ html {
 }
 
 .lang-and-networks {
-  margin-bottom: 33px;
-  margin-left: 0;
-  margin-right: auto;
-}
-
-.language-options {
   margin-bottom: 32px;
 }
 
-.language-options__select {
+.language-set {
+  margin-bottom: 32px;
+}
+
+.language-set__select {
   display: block;
-  width: 58.33%;
+  width: 75%;
+  max-width: 173px;
   height: 40px;
-  text-transform: uppercase;
-  color: #fff;
-  font-size: 13px;
   padding-left: 50px;
   padding-right: 24px;
+  font-size: 13px;
+  text-transform: uppercase;
+  color: #fff;
   background-color: #3b3b3b;
   background-image: url(../../img/world.svg), url(../../img/arrow.svg);
   background-repeat: no-repeat;
@@ -716,8 +700,8 @@ html {
 }
 
 @media(min-width:768px) {
-  .language-options__select {
-    width: 75%;
+  .language-set__select {
+    max-width: none;
   }
 }
 
@@ -725,12 +709,6 @@ html {
   color: #fff;
   font-size: 16px;
   margin-bottom: 16px;
-}
-
-@media(min-width:972px) {
-  .hashtag {
-    margin-bottom: 17px;
-  }
 }
 
 .hashtag-sign {
@@ -743,20 +721,22 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .networks__link {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 24px;
-  height: 24px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 24px;
+  height: 24px;
 }
 
 .networks__link {
@@ -768,7 +748,7 @@ html {
 }
 
 @media(min-width: 768px) {
-  #instIcon-border {
+  #inst-icon-border {
     display: none;
   }
 }
@@ -779,11 +759,11 @@ html {
 
 .service-navigation__link {
   display: block;
-  color: #fff;
-  text-decoration: none;
+  margin-bottom: 12px;
   font-size: 13px;
   line-height: 2.1;
-  margin-bottom: 12px;
+  text-decoration: none;
+  color: #fff;
 }
 
 .service-navigation__link:last-child {
@@ -797,20 +777,18 @@ html {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .apps-link {
   display: block;
   margin-left: 12px;
   margin-right: 12px;
-  height: 36px;
-  width: 124px;
 }
 
 @media(min-width: 768px) {
   .apps-link {
-    height: 40px;
-    width: 135px;
     margin-left: 20px;
     margin-right: 20px;
   }
@@ -818,33 +796,40 @@ html {
 
 .apps-link__img {
   display: block;
-  width: 100%;
-  height: 100%;
+  height: 36px;
+  width: 124px;
+}
+
+@media(min-width: 768px) {
+  .apps-link__img {
+    height: 40px;
+    width: 135px;
+  }
 }
 
 .footer-bottom__item {
+  margin-bottom: 24px;
   font-size: 11px;
   color: #fff;
-  margin-bottom: 24px;
 }
 
 .footer-bottom__link {
-  color: #fff;
   text-decoration: none;
+  color: #fff;
 }
 
-/*button UP*/
+/*button TO TOP*/
 
 .totop-btn {
   display: block;
-  position: absolute;
-  z-index: 100;
   width: 64px;
   height: 64px;
+  position: absolute;
   bottom: 24px;
   right: 16px;
-  background-color: #59BD5A;
+  z-index: 100;
   text-decoration: none;
+  background-color: #59BD5A;
   background-image: url(../../img/up-arrow.svg);
   background-size: 16px 26px;
   background-repeat: no-repeat;
@@ -860,8 +845,6 @@ html {
 
 @media(min-width:1024px) {
   .totop-btn {
-    width: 80px;
-    height: 80px;
     left: calc(50% + 466px);
     right: auto;
   }

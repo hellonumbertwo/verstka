@@ -38,165 +38,154 @@
   }
 }
 
-.restaurant-header__card {
+.restaurant-tablet {
+  width: 100%;
   position: absolute;
   bottom: -56px;
-  width: 100%;
   z-index: 10;
-  background-color: #fff;
   padding-top: 24px;
-  padding-left: 32px;
-  padding-right: 32px;
   padding-bottom: 24px;
+  padding-left: 24px;
+  padding-right: 24px;
+  background-color: #fff;
   box-shadow: 0 0 16px 0 rgba(117, 117, 117, 0.2);
 }
 
 @media(min-width:768px) {
-  .restaurant-header__card {
+  .restaurant-tablet {
     position: static;
-    padding-top: 40px;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-top: 38px;
     padding-bottom: 38px;
+    padding-left: 38px;
+    padding-right: 38px;
     box-shadow: none;
   }
 }
 
-@media(min-width:972px) {
-  .restaurant-header__card {
-    padding-left: 38px;
-    padding-right: 32px;
-  }
-}
-
 .restaurant-title {
+  text-align: center;
   font-size: 24px;
-  margin: 0;
-  padding: 0;
   font-weight: 400;
   line-height: 100%;
+  margin: 0;
   margin-bottom: 35px;
-  text-align: center;
 }
 
 @media(min-width:768px) {
   .restaurant-title {
+    text-align: left;
     font-size: 36px;
     margin-bottom: 58px;
-    text-align: left;
   }
 }
 
+.restaurant-tablet__reference {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 @media(min-width:768px) {
-  .restaurant-information {
-    display: flex;
+  .restaurant-tablet__reference {
+    flex-direction: row;
     justify-content: space-between;
   }
 }
 
-.restaurant-information__item {
+.restaurant-tablet__reference-item {
   display: flex;
   justify-content: center;
-}
-
-.restaurant-information__item:not(.restaurant-information__item--waiting) {
   padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 10px;
 }
 
-.restaurant-information__item:not(:last-child) {
-  margin-bottom: 14px;
+.restaurant-tablet__reference-item:last-child {
+  margin-bottom: 0;
 }
 
 @media(min-width:768px) {
-  .restaurant-information__item:not(:last-child) {
+  .restaurant-tablet__reference-item {
     margin-bottom: 0;
-  }
-}
-
-@media(min-width:768px) {
-  .restaurant-information__item {
     justify-content: flex-start;
   }
 }
 
-.restaurant-waiting--colored {
-  width: 97px;
-  background-color: #000;
-  color: #fff;
+.restaurant-tablet__reference-item--waiting {
   padding-left: 16px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  padding-right: 5px;
+  padding-right: 16px;
   border-radius: 20px;
-  height: 32px;
-  display: block;
+  font-size: 13px;
+  color: #fff;
+  background-color: #000;
+  line-height: 1.62;
 }
 
 /*restaurant's menu navigation*/
 
-.cuisines-nav-container {
+.cuisines-nav-section {
   display: none;
 }
 
 @media(min-width:768px) {
-  .cuisines-nav-container {
+  .cuisines-nav-section {
     display: block;
-  }
-  .cuisines-nav-inner {
     border-bottom: 1px solid rgba(117, 117, 117, 0.2);
   }
-  .cuisines-nav {
-    height: 80px;
-    padding-top: 32px;
-    padding-left: 0;
-    display: flex;
-    list-style: none;
-    margin: 0;
-  }
-  .cuisines-nav__item:not(:last-child) {
-    margin-right: 41px;
-  }
-  .cuisines-nav__link {
-    text-decoration: none;
-    color: #626262;
-    font-size: 16px;
-  }
-  .cuisines-nav__link.active {
-    color: #327430;
-  }
+}
+
+.cuisines-nav {
+  display: flex;
+  height: 80px;
+  padding-top: 32px;
+  padding-left: 0;
+  list-style: none;
+  margin: 0;
+}
+
+.cuisines-nav__item{
+  margin-right: 41px;
+}
+
+.cuisines-nav__item:last-child {
+  margin-right: 0;
+}
+
+.cuisines-nav__link {
+  text-decoration: none;
+  font-size: 16px;
+  color: #626262;
+}
+
+.cuisines-nav__link.active {
+  color: #327430;
 }
 
 /*restaurant menu section*/
 
 .menu-section {
   padding-top: 32px;
-  padding-bottom: 25px;
-}
-
-@media(min-width:768px) {
-  .menu-section {
-    padding-bottom: 16px;
-  }
+  padding-bottom: 24px;
 }
 
 @media(min-width:972px) {
   .menu-section {
-    padding-bottom: 31px;
+    padding-bottom: 32px;
   }
 }
 
 .menu-section__title {
+  width: 100%;
   margin-top: 24px;
   margin-bottom: 42px;
   font-size: 22px;
   line-height: 34px;
   font-weight: 400;
-  width: 100%;
 }
 
 @media(min-width:768px) {
   .menu-section__title {
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
 }
 
@@ -219,7 +208,6 @@
     background: none;
   }
 }
-
 
 .dish-card {
   display: flex;
