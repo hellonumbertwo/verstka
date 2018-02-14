@@ -511,7 +511,9 @@ html {
 
 .restaurant-card__name {
   font-size: 16px;
+  font-weight: normal;
   line-height: 1.5;
+  margin: 0;
   margin-bottom: 5px;
 }
 
@@ -543,7 +545,7 @@ html {
 }
 
 .restaurant-info__cuisines-item:before {
-  content: "\2022";
+  content: "\2022\0020";
 }
 
 .restaurant-card__waiting-time {

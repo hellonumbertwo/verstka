@@ -272,6 +272,8 @@
 .dish-card__name {
   font-size: 14px;
   line-height: 1.715;
+  font-weight: normal;
+  margin: 0;
   margin-bottom: 5px;
   white-space: nowrap;
   overflow: hidden;
@@ -281,6 +283,8 @@
 .dish-card__name-details {
   font-size: 13px;
   line-height: 1.62;
+  margin: 0;
+  margin-bottom: 5px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
