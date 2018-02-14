@@ -23,7 +23,7 @@ html {
 .col-xs-2 {
   -ms-flex-preferred-size: 16.6666%;
       flex-basis: 16.6666%;
-  max-width: 8.3333%;
+  max-width: 16.6666%;
 }
 
 .col-xs-3 {
@@ -53,7 +53,7 @@ html {
 .col-xs-7 {
   -ms-flex-preferred-size: 58.3331%;
       flex-basis: 58.3331%;
-  max-width: 49.9998%;
+  max-width: 58.3331%;
 }
 
 .col-xs-8 {
@@ -100,6 +100,7 @@ html {
   .col-sm-3 {
     -ms-flex-preferred-size: 24.9999%;
         flex-basis: 24.9999%;
+    max-width: 24.9999%;
   }
   .col-sm-4 {
     -ms-flex-preferred-size: 33.3333%;
