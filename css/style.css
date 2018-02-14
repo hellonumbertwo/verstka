@@ -283,6 +283,7 @@ html {
   appearance: none;
   background: none;
   border: none;
+  border-radius: 0;
   cursor: pointer;
   align-items: center;
   display: flex;
@@ -432,6 +433,7 @@ html {
   appearance: none;
   background: none;
   border: none;
+  border-radius: 0;
   width: 100%;
   height: 50px;
   font-size: 13px;
@@ -608,6 +610,7 @@ html {
 .language-set__select {
   appearance: none;
   border: none;
+  border-radius: 0;
   font-family: inherit;
   background-color: transparent;
   display: block;
