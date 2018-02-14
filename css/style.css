@@ -14,127 +14,162 @@ html {
 
 .col-xs-1 {
   flex-basis: 8.3333%;
+  max-width: 8.3333%;
 }
 
 .col-xs-2 {
   flex-basis: 16.6666%;
+  max-width: 8.3333%;
 }
 
 .col-xs-3 {
   flex-basis: 24.9999%;
+  max-width: 24.9999%;
 }
 
 .col-xs-4 {
   flex-basis: 33.3333%;
+  max-width: 33.3333%
 }
 
 .col-xs-5 {
   flex-basis: 41.6665%;
+  max-width: 41.6665%;
 }
 
 .col-xs-6 {
   flex-basis: 49.9998%;
+  max-width: 49.9998%;
 }
 
 .col-xs-7 {
   flex-basis: 58.3331%;
+  max-width: 49.9998%;
 }
 
 .col-xs-8 {
   flex-basis: 66.6664%;
+  max-width: 66.6664%;
 }
 
 .col-xs-9 {
   flex-basis: 74.9997%;
+  max-width: 74.9997%;
 }
 
 .col-xs-10 {
   flex-basis: 83.3333%;
+  max-width: 83.3333%;
 }
 
 .col-xs-11 {
   flex-basis: 91.6663%;
+  max-width: 91.6663%;
 }
 
 .col-xs-12 {
   flex-basis: 100%;
+  max-width: 100%;
 }
 
 @media(min-width:768px) {
   .col-sm-1 {
     flex-basis: 8.3333%;
+    max-width: 8.3333%;
   }
   .col-sm-2 {
     flex-basis: 16.6666%;
+    max-width: 16.6666%;
   }
   .col-sm-3 {
     flex-basis: 24.9999%;
   }
   .col-sm-4 {
     flex-basis: 33.3333%;
+    max-width: 33.3333%;
   }
   .col-sm-5 {
     flex-basis: 41.6665%;
+    max-width: 41.6665%;
   }
   .col-sm-6 {
     flex-basis: 49.9998%;
+    max-width: 49.9998%;
   }
   .col-sm-7 {
     flex-basis: 58.3331%;
+    max-width: 58.3331%;
   }
   .col-sm-8 {
     flex-basis: 66.6664%;
+    max-width: 66.6664%;
   }
   .col-sm-9 {
     flex-basis: 74.9997%;
+    max-width: 74.9997%;
   }
   .col-sm-10 {
     flex-basis: 83.3333%;
+    max-width: 83.3333%;
   }
   .col-sm-11 {
     flex-basis: 91.6663%;
+    max-width: 91.6663%;
   }
   .col-sm-12 {
     flex-basis: 100%;
+    max-width: 100%;
   }
 }
 
 @media(min-width:972px) {
   .col-lg-1 {
     flex-basis: 8.3333%;
+    max-width: 8.3333%;
   }
   .col-lg-2 {
     flex-basis: 16.6666%;
+    max-width: 16.6666%;
   }
   .col-lg-3 {
     flex-basis: 24.9999%;
+    max-width: 24.9999%;
   }
   .col-lg-4 {
     flex-basis: 33.3333%;
+    max-width: 33.3333%;
   }
   .col-lg-5 {
     flex-basis: 41.6665%;
+    max-width: 41.6665%;
   }
   .col-lg-6 {
     flex-basis: 49.9998%;
+    max-width: 49.9998%;
   }
   .col-lg-7 {
     flex-basis: 58.3331%;
+    max-width: 58.3331%;
   }
   .col-lg-8 {
     flex-basis: 66.6664%;
+    max-width: 66.6664%;
   }
   .col-lg-9 {
     flex-basis: 74.9997%;
+    max-width: 74.9997%;
   }
   .col-lg-10 {
     flex-basis: 83.3333%;
+    max-width: 83.3333%;
   }
   .col-lg-11 {
     flex-basis: 91.6663%;
+    max-width: 91.6663%;
   }
   .col-lg-12 {
     flex-basis: 100%;
+    max-width: 100%;
   }
 }
 
@@ -155,32 +190,15 @@ html {
   margin: 0 auto;
 }
 
-.input-reset {
-  appearance: none;
-  background: none;
-  border: none;
-}
-
-.list-reset {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.select-reset {
-  appearance: none;
-  border: none;
-  font-family: inherit;
-  background-color: transparent;
-}
+/*Styles*/
 
 .header-top {
-  box-shadow: 0 0 16px 0 rgba(38, 38, 38, 0.16);
-  background: #fff;
   position: fixed;
   z-index: 1000;
   width: 100%;
   top: 0;
+  background: #fff;
+  box-shadow: 0 0 16px 0 rgba(38, 38, 38, 0.16);
 }
 
 .header-top__item {
@@ -190,12 +208,13 @@ html {
 }
 
 .header-logo__img {
-  width: 106px;
+  width: 100%;
+  max-width: 106px;
 }
 
 @media(min-width:972px) {
   .header-logo__img {
-    width: 120px;
+    max-width: 120px;
   }
 }
 
@@ -260,12 +279,16 @@ html {
 }
 
 .header-delivery__field {
+  appearance: none;
+  background: none;
+  border: none;
+  cursor: pointer;
   align-items: center;
   display: flex;
   height: 40px;
+  font-size: 13px;
   color: #1D1D1D;
   border: 1px solid #E0E0E0;
-  font-size: 13px;
 }
 
 @media(min-width:972px) {
@@ -276,11 +299,8 @@ html {
 
 .header-delivery__field--time {
   justify-content: center;
-  appearance: none;
-  background: none;
-  cursor: pointer;
   padding-left: 14px;
-  padding-right: 13px
+  padding-right: 13px;
 }
 
 @media(min-width:768px) {
@@ -292,9 +312,8 @@ html {
 
 .header-delivery__field--destination {
   flex-grow: 1;
-}
-
-.header-delivery__input {
+  display: block;
+  width: 100%;
   padding-left: 36px;
   background-image: url(../../img/location.svg);
   background-size: 14px 16px;
@@ -302,8 +321,6 @@ html {
   background-repeat: no-repeat;
   overflow: hidden;
   text-overflow: ellipsis;
-  display: block;
-  width: 100%;
 }
 
 .header-delivery__label {
@@ -408,12 +425,14 @@ html {
   display: flex;
   flex-grow: 1;
   align-items: center;
-  height: 50px;
-  border-bottom: 1px solid #757575;
 }
 
 .main-search__input {
+  appearance: none;
+  background: none;
+  border: none;
   width: 100%;
+  height: 50px;
   font-size: 13px;
   padding-left: 24px;
   padding-right: 8px;
@@ -421,9 +440,12 @@ html {
   padding-bottom: 12px;
   background-image: url(../../img/search.svg);
   background-size: 16px, 16px;
-  background-position: 0 8px;
+  background-position: left bottom 18px;
   background-repeat: no-repeat;
-  outline: none;
+  border-bottom: 1px solid #757575;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 @media(min-width:768px) {
@@ -431,22 +453,18 @@ html {
     font-size: 16px;
     padding-left: 30px;
     background-size: 22px, 22px;
-    background-position: 0 4px;
   }
 }
 
 /*Page title*/
 
 .page-title {
-  padding-top: 34px;
-  padding-bottom: 14px;
-}
-
-.page-title__txt {
   font-size: 22px;
   line-height: 1.545;
   font-weight: 400;
   text-transform: capitalize;
+  padding-top: 34px;
+  padding-bottom: 14px;
   margin: 0;
 }
 
@@ -510,6 +528,12 @@ html {
   margin-right: 4px;
 }
 
+.restaurant-info__cuisines-list{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .restaurant-info__cuisines-item {
   font-size: 14px;
   display: inline-block;
@@ -527,8 +551,14 @@ html {
 /*Page footer*/
 
 .page-footer {
-  background-color: #262626;
   position: relative;
+  background-color: #262626;
+}
+
+.footer-logo{
+  width:100%;
+  max-width: 192px;
+  height: auto;
 }
 
 .page-footer__item {
@@ -575,6 +605,10 @@ html {
 }
 
 .language-set__select {
+  appearance: none;
+  border: none;
+  font-family: inherit;
+  background-color: transparent;
   display: block;
   width: 75%;
   max-width: 173px;
@@ -604,8 +638,8 @@ html {
 
 .hashtag-sign {
   display: inline-block;
-  color: #49A144;
   margin-right: 2px;
+  color: #49A144;
 }
 
 .networks {
@@ -717,12 +751,5 @@ html {
   .totop-btn {
     width: 80px;
     height: 80px;
-  }
-}
-
-@media(min-width:1024px) {
-  .totop-btn {
-    left: calc(50% + 466px);
-    right: auto;
   }
 }

@@ -12,7 +12,6 @@
 </head>
 
 <body>
-
   <svg style="display:none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
    <symbol id="basket-icon" viewBox="0 0 20 22">
      <path transform="translate(1 6)" fill="#262626" fill-rule="evenodd" d="M 18.9474 0L 0 0L 0 11.7895C 0 13.9986 1.79086 15.7895 4 15.7895L 14.9474 15.7895C 17.1565 15.7895 18.9474 13.9986 18.9474 11.7895L 18.9474 0ZM 4 14.2895C 2.61929 14.2895 1.5 13.1702 1.5 11.7895L 1.5 1.5L 17.4474 1.5L 17.4474 11.7895C 17.4474 13.1702 16.3281 14.2895 14.9474 14.2895L 4 14.2895Z"/>
@@ -28,32 +27,28 @@
      <path id="inst-icon-border" fill="#fff" d="M 13.0326 0L 4.96729 0C 2.22827 0 0 2.22839 0 4.96741L 0 13.0326C 0 15.7717 2.22827 18 4.96729 18L 13.0326 18C 15.7717 18 18 15.7716 18 13.0326L 18 4.96741C 18.0001 2.22839 15.7717 0 13.0326 0ZM 17.0001 13.3579C 17.0001 15.3662 15.3662 17 13.3579 17L 4.64197 17C 2.63379 17.0001 1 15.3662 1 13.3579L 1 4.64209C 1 2.63391 2.63379 1 4.64197 1L 13.3578 1C 15.3661 1 17 2.63391 17 4.64209L 17.0001 13.3579Z"/>
      <path fill="#fff" d="M 4.36182 9.00024C 4.36182 6.44275 6.4425 4.36206 9 4.36206C 11.5575 4.36206 13.6381 6.44275 13.6381 9.00024C 13.6381 11.5576 11.5575 13.6382 9 13.6382C 6.4425 13.6382 4.36182 11.5576 4.36182 9.00024ZM 13.4348 2.83411C 13.5833 2.68506 13.7898 2.59998 14 2.59998C 14.2108 2.59998 14.4174 2.68506 14.5658 2.83411C 14.7148 2.98254 14.7999 3.18909 14.7999 3.40002C 14.7999 3.61011 14.7148 3.81665 14.5658 3.96582C 14.4166 4.11414 14.2108 4.19995 14 4.19995C 13.7898 4.19995 13.5833 4.11414 13.4348 3.96582C 13.2858 3.81665 13.2 3.61023 13.2 3.40002C 13.2 3.26428 13.2355 3.13049 13.3004 3.0127C 13.3364 2.94739 13.3816 2.88708 13.4348 2.83411Z"/>
    </symbol>
-  </svg>
+ </svg>
 
   <header class="page-header" id="page-top">
     <div class="header-top">
       <div class="container">
         <div class="row">
           <div class="col col-xs-5 col-sm-2 col-lg-3">
-            <div class="header-top__item header-logo">
-              <a href="#">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/logo.svg">
-                  <img class="header-logo__img" src="img/logo-small.svg" alt="UberEats">
-                </picture>
-              </a>
-            </div>
+            <a class="header-top__item header-logo" href="#">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo.svg">
+                <img class="header-logo__img" src="img/logo-small.svg" alt="UberEats">
+              </picture>
+            </a>
           </div>
-          <form class="header-top__item header-delivery header-delivery--desktop" method="post" action="/main/delivery">
+          <form class="header-top__item header-delivery header-delivery--desktop" method="post" action="">
             <div class="header-delivery__item header-delivery__item--time">
-              <span class="header-delivery__label header-delivery__label--when">When</span>
-              <button type="button" class="header-delivery__field header-delivery__field--time" type="button">
-                  ASAP
-                </button>
+              <label class="header-delivery__label header-delivery__label--when">When</label>
+              <button type="button" class="header-delivery__field header-delivery__field--time" type="button">ASAP</button>
             </div>
             <div class="header-delivery__item header-delivery__item--destination">
-              <span class="header-delivery__label header-delivery__label--to">To</span>
-              <input id="destination" class="header-delivery__field header-delivery__field--destination header-delivery__input input-reset" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
+              <label class="header-delivery__label header-delivery__label--to" for="destination">To</label>
+              <input id="destination" class="header-delivery__field header-delivery__field--destination" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
             </div>
           </form>
           <div class="col col-xs-7 col-sm-5 col-lg-4">
@@ -78,7 +73,7 @@
     <section class="restaurant-header">
       <div class="container">
         <div class="row">
-          <div class="col col-xs-12 col-sm-7  col-lg-5">
+          <div class="col col-xs-12 col-sm-7 col-lg-5">
             <div class="restaurant-header__content">
               <div class="restaurant-tablet">
                 <h1 class="restaurant-title">
@@ -88,7 +83,7 @@
                   <div class="restaurant-tablet__reference-item">
                     <div class="restaurant-info">
                       <span class="restaurant-info__cost">&#8381;&#8381;&#8381;</span>
-                      <ul class="restaurant-info__cuisines-list list-reset">
+                      <ul class="restaurant-info__cuisines-list">
                         <li class="restaurant-info__cuisines-item">
                           Европейская
                         </li>
@@ -108,114 +103,86 @@
 
     <section class="cuisines-nav-section">
       <div class="container">
-        <div class="row">
-          <div class="col col-sm-12">
-            <ul class="cuisines-nav">
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link active" href="#">Закуски</a></li>
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Салаты</a></li>
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Супы</a></li>
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Горячие блюда</a></li>
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Гарниры</a></li>
-              <li class="cuisines-nav__item"><a class="cuisines-nav__link" href="#">Десерты</a></li>
-            </ul>
-          </div>
-        </div>
+        <nav class="cuisines-nav">
+          <a class="cuisines-nav__link active" href="#">Закуски</a>
+          <a class="cuisines-nav__link" href="#">Салаты</a>
+          <a class="cuisines-nav__link" href="#">Супы</a>
+          <a class="cuisines-nav__link" href="#">Горячие блюда</a>
+          <a class="cuisines-nav__link" href="#">Гарниры</a>
+          <a class="cuisines-nav__link" href="#">Десерты</a>
+        </nav>
       </div>
     </section>
 
     <section class="menu-section">
       <div class="container">
-        <div class="row">
-          <div class="col col-xs-12">
-            <h2 class="menu-section__title">
-              <span class="menu-section__title-decorator">Закуски</span>
-            </h2>
-          </div>
-        </div>
+        <h2 class="menu-section__title">Закуски</h2>
         <div class="row row--wrap">
           <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">
-                    <span class="dish-card__name-inner">Сельдь на бородинском хлебе</span>
-                  </div>
+                  <div class="dish-card__name">Сельдь на бородинском хлебе</div>
                   <div class="dish-card__name-details">С яйцом и огурцом</div>
                 </div>
                 <div class="dish-card__price">240 &#8381;</div>
               </div>
-              <div class="dish-card__photo dish-card__photo--pushkin-seld">
-              </div>
+              <img class="dish-card__photo" src="img/pushkin-seld.jpg" alt="">
             </article>
           </div>
           <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">
-                    <span class="dish-card__name-inner">Соленья ассорти</span>
-                  </div>
+                  <div class="dish-card__name">Соленья ассорти</div>
                 </div>
                 <div class="dish-card__price">320 &#8381;</div>
               </div>
-              <div class="dish-card__photo dish-card__photo--pushkin-solenia">
-              </div>
+              <img class="dish-card__photo" src="img/pushkin-solenia.jpg" alt="">
             </article>
           </div>
           <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">
-                    <span class="dish-card__name-inner">Грибы маринованные</span>
-                  </div>
+                  <div class="dish-card__name">Грибы маринованные</div>
                 </div>
                 <div class="dish-card__price">300 &#8381;</div>
               </div>
-              <div class="dish-card__photo dish-card__photo--pushkin-griby">
-              </div>
+              <img class="dish-card__photo" src="img/pushkin-griby.jpg" alt="">
             </article>
           </div>
           <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">
-                    <span class="dish-card__name-inner">Сало домашнее с горчицей</span>
-                  </div>
+                  <div class="dish-card__name">Сало домашнее с горчицей</div>
                 </div>
                 <div class="dish-card__price">320 &#8381;</div>
               </div>
-              <div class="dish-card__photo dish-card__photo--pushkin-salo">
-              </div>
+              <img class="dish-card__photo" src="img/pushkin-salo.jpg" alt="">
             </article>
           </div>
           <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">
-                    <span class="dish-card__name-inner">Малосольная семга</span>
-                  </div>
+                  <div class="dish-card__name">Малосольная семга</div>
                 </div>
                 <div class="dish-card__price">390 &#8381;</div>
               </div>
-              <div class="dish-card__photo dish-card__photo--pushkin-semga">
-              </div>
+              <img class="dish-card__photo" src="img/pushkin-semga.jpg" alt="">
             </article>
           </div>
           <div class="col col-xs-12 col-lg-6">
             <article class="dish-card">
               <div class="dish-card__content">
                 <div class="dish-card__info">
-                  <div class="dish-card__name">
-                    <span class="dish-card__name-inner">Язык говяжий с хреном</span>
-                  </div>
+                  <div class="dish-card__name">Язык говяжий с хреном</div>
                 </div>
                 <div class="dish-card__price">350 &#8381;</div>
               </div>
-              <div class="dish-card__photo dish-card__photo--pushkin-iazyk">
-              </div>
+              <img class="dish-card__photo" src="img/pushkin-iazyk.jpg" alt="">
             </article>
           </div>
         </div>
@@ -226,18 +193,14 @@
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__item page-footer__item--footer-top">
-        <div class="row">
-          <div class="col col-xs-12">
-            <img class="big-logo" src="img/big-logo.svg" width="192" height="21">
-          </div>
-        </div>
+        <img class="footer-logo" src="img/big-logo.svg">
       </div>
       <div class="page-footer__item page-footer__item--customer-links">
         <div class="row row--wrap">
           <div class="col col-xs-12 col-sm-4">
             <div class="lang-and-networks">
               <form class="language-set">
-                <select class="language-set__select select-reset" id="select">
+                <select class="language-set__select" id="select">
                     <option>English</option>
                     <option>Русский</option>
                     <option>Deutsch</option>

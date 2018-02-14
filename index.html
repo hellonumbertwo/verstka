@@ -34,25 +34,21 @@
       <div class="container">
         <div class="row">
           <div class="col col-xs-5 col-sm-2 col-lg-3">
-            <div class="header-top__item header-logo">
-              <a href="#">
-                <picture>
-                  <source media="(min-width: 768px)" srcset="img/logo.svg">
-                  <img class="header-logo__img" src="img/logo-small.svg" alt="UberEats">
-                </picture>
-              </a>
-            </div>
+            <a class="header-top__item header-logo" href="#">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo.svg">
+                <img class="header-logo__img" src="img/logo-small.svg" alt="UberEats">
+              </picture>
+            </a>
           </div>
-          <form class="header-top__item header-delivery header-delivery--desktop" method="post" action="/main/delivery">
+          <form class="header-top__item header-delivery header-delivery--desktop" method="post" action="">
             <div class="header-delivery__item header-delivery__item--time">
-              <span class="header-delivery__label header-delivery__label--when">When</span>
-              <button type="button" class="header-delivery__field header-delivery__field--time" type="button">
-                  ASAP
-                </button>
+              <label class="header-delivery__label header-delivery__label--when">When</label>
+              <button type="button" class="header-delivery__field header-delivery__field--time" type="button">ASAP</button>
             </div>
             <div class="header-delivery__item header-delivery__item--destination">
-              <span class="header-delivery__label header-delivery__label--to">To</span>
-              <input id="destination" class="header-delivery__field header-delivery__field--destination header-delivery__input input-reset" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
+              <label class="header-delivery__label header-delivery__label--to" for="destination">To</label>
+              <input id="destination" class="header-delivery__field header-delivery__field--destination" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
             </div>
           </form>
           <div class="col col-xs-7 col-sm-5 col-lg-4">
@@ -77,23 +73,21 @@
           <div class="col col-xs-12">
             <div class="header-search">
               <form class="main-search" method="get" action="/main/search">
-                <input class="main-search__input input-reset" type="text" placeholder="Search for restaurant or cuisine" name="search-request" value>
+                <input class="main-search__input" type="text" placeholder="Search for restaurant or cuisine" name="search-request" value>
               </form>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col col-xs-12">
-            <form class="header-delivery header-delivery--mobile" method="post" action="/main/delivery">
+            <form class="header-delivery header-delivery--mobile" method="post" action="">
               <div class="header-delivery__item header-delivery__item--time">
-                <span class="header-delivery__label header-delivery__label--when">When</span>
-                <button type="button" class="header-delivery__field header-delivery__field--time">
-                  ASAP
-                </button>
+                <label class="header-delivery__label header-delivery__label--when">When</label>
+                <button type="button" class="header-delivery__field header-delivery__field--time">ASAP</button>
               </div>
               <div class="header-delivery__item header-delivery__item--destination">
-                <span class="header-delivery__label header-delivery__label--to">To</span>
-                <input id="destination" class="header-delivery__field header-delivery__field--destination header-delivery__input input-reset" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
+                <label class="header-delivery__label header-delivery__label--to" for="destination">To</label>
+                <input id="destination" class="header-delivery__field header-delivery__field--destination" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
               </div>
             </form>
           </div>
@@ -103,17 +97,9 @@
   </header>
 
   <main class="page-content">
-    <div class="page-title">
-      <div class="container">
-        <div class="row">
-          <div class="col col-xs-12">
-            <h1 class="page-title__txt">Moscow restaurants</h1>
-          </div>
-        </div>
-      </div>
-    </div>
-    <section class="restaurants-list">
-      <div class="container">
+    <div class="container">
+      <h1 class="page-title">Moscow restaurants</h1>
+      <section class="restaurants-list">
         <div class="row row--wrap">
           <div class="col col-xs-12 col-sm-6 col-lg-4">
             <a class="restaurant-card" href="#">
@@ -123,7 +109,7 @@
                 </div>
                 <div class="restaurant-card__info restaurant-info">
                   <span class="restaurant-info__cost">&#8381;&#8381;</span>
-                  <ul class="restaurant-info__cuisines-list list-reset">
+                  <ul class="restaurant-info__cuisines-list">
                     <li class="restaurant-info__cuisines-item">
                       Бургеры
                     </li>
@@ -142,7 +128,7 @@
                 </div>
                 <div class="restaurant-card__info restaurant-info">
                   <span class="restaurant-info__cost">&#8381;</span>
-                  <ul class="restaurant-info__cuisines-list list-reset">
+                  <ul class="restaurant-info__cuisines-list">
                     <li class="restaurant-info__cuisines-item">
                       Японская
                     </li>
@@ -167,7 +153,7 @@
                 </div>
                 <div class="restaurant-card__info restaurant-info">
                   <span class="restaurant-info__cost">&#8381;</span>
-                  <ul class="restaurant-info__cuisines-list list-reset">
+                  <ul class="restaurant-info__cuisines-list">
                     <li class="restaurant-info__cuisines-item">
                       Американская
                     </li>
@@ -189,7 +175,7 @@
               </div>
               <div class="restaurant-card__info restaurant-info">
                 <span class="restaurant-info__cost">&#8381;&#8381;</span>
-                <ul class="rrestaurant-info__cuisines-list list-reset">
+                <ul class="rrestaurant-info__cuisines-list">
                   <li class="restaurant-info__cuisines-item">
                       Вьетнамская
                     </li>
@@ -208,7 +194,7 @@
               </div>
               <div class="restaurant-card__info restaurant-info">
                 <span class="restaurant-info__cost">&#8381;&#8381;</span>
-                <ul class="restaurant-info__cuisines-list list-reset">
+                <ul class="restaurant-info__cuisines-list">
                     <li class="restaurant-info__cuisines-item">
                       Вьетнамская
                     </li>
@@ -227,7 +213,7 @@
               </div>
               <div class="restaurant-card__info restaurant-info">
                 <span class="restaurant-info__cost">&#8381;</span>
-                <ul class="restaurant-info__cuisines-list list-reset">
+                <ul class="restaurant-info__cuisines-list">
                   <li class="restaurant-info__cuisines-item">
                     Выпечка
                   </li>
@@ -252,7 +238,7 @@
               </div>
               <div class="restaurant-card__info restaurant-info">
                 <span class="restaurant-info__cost">&#8381;&#8381;</span>
-                <ul class="restaurant-info__cuisines-list list-reset">
+                <ul class="restaurant-info__cuisines-list">
                   <li class="restaurant-info__cuisines-item">
                     Пицца
                   </li>
@@ -271,7 +257,7 @@
               </div>
               <div class="restaurant-card__info restaurant-info">
                 <span class="restaurant-info__cost">&#8381;&#8381;</span>
-                <ul class="restaurant-info__cuisines-list list-reset">
+                <ul class="restaurant-info__cuisines-list">
                   <li class="restaurant-info__cuisines-item">
                     Японская
                   </li>
@@ -290,7 +276,7 @@
               </div>
               <div class="restaurant-card__info restaurant-info">
                 <span class="restaurant-info__cost">&#8381;&#8381;&#8381;</span>
-                <ul class="restaurant-info__cuisines-list list-reset">
+                <ul class="restaurant-info__cuisines-list">
                   <li class="restaurant-info__cuisines-item">
                     Европейская
                   </li>
@@ -302,25 +288,20 @@
             </a>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
   </main>
 
   <footer class="page-footer">
     <div class="container">
       <div class="page-footer__item page-footer__item--footer-top">
-        <div class="row">
-          <div class="col col-xs-12">
-            <img class="big-logo" src="img/big-logo.svg" width="192" height="21">
-          </div>
-        </div>
+        <img class="footer-logo" src="img/big-logo.svg" width="192" height="21">
       </div>
       <div class="page-footer__item page-footer__item--customer-links">
         <div class="row row--wrap">
           <div class="col col-xs-12 col-sm-4">
             <div class="lang-and-networks">
               <form class="language-set">
-                <select class="language-set__select select-reset" id="select">
+                <select class="language-set__select" id="select">
                     <option>English</option>
                     <option>Русский</option>
                     <option>Deutsch</option>

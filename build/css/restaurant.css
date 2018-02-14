@@ -159,24 +159,22 @@
   display: -ms-flexbox;
   display: flex;
   height: 80px;
-  padding-top: 32px;
-  padding-left: 0;
-  list-style: none;
-  margin: 0;
-}
-
-.cuisines-nav__item{
-  margin-right: 41px;
-}
-
-.cuisines-nav__item:last-child {
-  margin-right: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .cuisines-nav__link {
   text-decoration: none;
   font-size: 16px;
+  margin-right: 42px;
   color: #626262;
+}
+
+.cuisines-nav__link:last-child {
+  margin-right: 0;
 }
 
 .cuisines-nav__link.active {
@@ -187,53 +185,35 @@
 
 .menu-section {
   padding-top: 32px;
-  padding-bottom: 25px;
-}
-
-@media(min-width:768px) {
-  .menu-section {
-    padding-bottom: 16px;
-  }
+  padding-bottom: 24px;
 }
 
 @media(min-width:972px) {
   .menu-section {
-    padding-bottom: 31px;
+    padding-bottom: 32px;
   }
 }
 
 .menu-section__title {
+  text-align: center;
   margin-top: 24px;
   margin-bottom: 42px;
-  font-size: 22px;
-  line-height: 34px;
-  font-weight: 400;
-  width: 100%;
-}
-
-@media(min-width:768px) {
-  .menu-section__title {
-    margin-bottom: 31px;
-  }
-}
-
-.menu-section__title-decorator {
-  display: block;
-  text-align: center;
   padding-bottom: 13px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 34px;
   background-image: linear-gradient(to right, #757575 50px, transparent 50px);
   background-size: 50px 1px;
   background-position: 50% 100%;
   background-repeat: no-repeat;
-  padding-right: 12px;
-  padding-left: 12px;
 }
 
 @media(min-width:768px) {
-  .menu-section__title-decorator {
+  .menu-section__title {
     text-align: left;
-    padding: 0;
-    background: none;
+    padding-bottom: 0;
+    margin-bottom: 32px;
+    background-image: none;
   }
 }
 
@@ -241,13 +221,8 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: stretch;
-      -ms-flex-align: stretch;
-          align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   margin-bottom: 16px;
+  color: #1D1D1D;
   border-bottom: 1px solid rgba(117, 117, 117, .2);
 }
 
@@ -264,14 +239,11 @@
 
 @media(min-width:972px) {
   .dish-card {
-    margin-bottom: 49px;
-    color: #1D1D1D;
+    margin-bottom: 48px;
   }
 }
 
 .dish-card__content {
-  padding-right: 16px;
-  padding-bottom: 14px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -283,66 +255,52 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+      -ms-flex: 1;
+          flex: 1;
+  min-width: 0;
+  padding-right: 16px;
+  padding-bottom: 14px;
 }
 
 @media(min-width:768px) {
   .dish-card__content {
     padding-top: 14px;
-    padding-left: 23px;
-    border-right: none;
-  }
-}
-
-@media(min-width:972px) {
-  .dish-card__content {
-    padding-left: 15px;
+    padding-left: 16px;
   }
 }
 
 .dish-card__name {
   font-size: 14px;
-  line-height: 24px;
-  height: 24px;
+  line-height: 1.715;
   margin-bottom: 5px;
-  position: relative;
-}
-
-.dish-card__name-inner {
-  display: block;
-  position: absolute;
-  width: 100%;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
 }
 
-@media(min-width:768px) {
-  .dish-card__name {
-    font-size: 16px;
-  }
-}
-
 .dish-card__name-details {
   font-size: 13px;
+  line-height: 1.62;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   color: #626262;
-  line-height: 21px;
 }
 
 .dish-card__price {
   font-size: 15px;
-  line-height: 21px;
+  line-height: 1.4;
   font-weight: 500;
 }
 
 .dish-card__photo {
+  display: block;
   width: 102px;
-  min-width: 102px;
   height: 102px;
-  background-size: 100% 100%;
-  background-position: 50% 50%;
-  background-repeat: no-repeat;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
 }
 
 @media(min-width:768px) {
@@ -357,28 +315,4 @@
     width: 170px;
     height: 160px;
   }
-}
-
-.dish-card__photo--pushkin-seld {
-  background-image: url(../../img/pushkin-seld.jpg);
-}
-
-.dish-card__photo--pushkin-solenia {
-  background-image: url(../../img/pushkin-solenia.jpg);
-}
-
-.dish-card__photo--pushkin-griby {
-  background-image: url(../../img/pushkin-griby.jpg);
-}
-
-.dish-card__photo--pushkin-salo {
-  background-image: url(../../img/pushkin-salo.jpg);
-}
-
-.dish-card__photo--pushkin-semga {
-  background-image: url(../../img/pushkin-semga.jpg);
-}
-
-.dish-card__photo--pushkin-iazyk {
-  background-image: url(../../img/pushkin-iazyk.jpg);
 }
