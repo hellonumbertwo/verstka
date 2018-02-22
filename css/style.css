@@ -192,6 +192,9 @@ html {
 }
 
 /*Styles*/
+.page-header {
+  padding-top: 72px;
+}
 
 .header-top {
   position: fixed;
@@ -217,10 +220,6 @@ html {
   .header-logo__img {
     max-width: 120px;
   }
-}
-
-.header-bottom {
-  padding-top: 72px;
 }
 
 /*Ordering form on pages*/
