@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <title>Food delivery</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500&amp;subset=cyrillic-ext" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="build/css/style.css">
+</head>
+
+<body>
+
+  <svg style="display:none;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+   <symbol id="basket-icon" viewBox="0 0 20 22">
+     <path transform="translate(1 6)" fill="#262626" fill-rule="evenodd" d="M 18.9474 0L 0 0L 0 11.7895C 0 13.9986 1.79086 15.7895 4 15.7895L 14.9474 15.7895C 17.1565 15.7895 18.9474 13.9986 18.9474 11.7895L 18.9474 0ZM 4 14.2895C 2.61929 14.2895 1.5 13.1702 1.5 11.7895L 1.5 1.5L 17.4474 1.5L 17.4474 11.7895C 17.4474 13.1702 16.3281 14.2895 14.9474 14.2895L 4 14.2895Z"/>
+     <path transform="translate(5.5 0)" fill="#262626" d="M 1.5 11.1525L 1.5 4.96053C 1.5 3.04933 3.04933 1.5 4.96053 1.5C 6.87172 1.5 8.42105 3.04933 8.42105 4.96053L 8.42105 11.1525C 8.42105 11.5667 8.75684 11.9025 9.17105 11.9025C 9.58527 11.9025 9.92105 11.5667 9.92105 11.1525L 9.92105 4.96053C 9.92105 2.2209 7.70015 0 4.96053 0C 2.2209 0 0 2.2209 0 4.96053L 0 11.1525C 0 11.5667 0.335786 11.9025 0.75 11.9025C 1.16421 11.9025 1.5 11.5667 1.5 11.1525Z"/>
+   </symbol>
+   <symbol id="facebook-icon" viewBox="0 0 18 18">
+    <path fill="#fff" fill-rule="evenodd" d="M 16.5 0L 1.5 0C 0.659912 0 0 0.660034 0 1.5L 0 16.5C 0 17.34 0.659912 18 1.5 18L 8.3999 18L 12 18L 16.5 18C 17.3401 18 18 17.34 18 16.5L 18 1.5C 18 0.660034 17.3401 0 16.5 0ZM 9.052 11.2609L 6.80005 11.2609L 6.80005 8.96521L 9.052 8.96521L 9.052 6.95654C 9.052 5.32092 10.2905 3.94348 11.8667 3.80005L 14.4001 3.80005L 14.4001 6.0957L 12.1482 6.0957C 11.6697 6.0957 11.3037 6.46875 11.3037 6.95654L 11.3037 8.96521L 14.1187 8.96521L 14.1187 11.2609L 11.3037 11.2609L 11.3037 17.2001L 9.052 17.2001L 9.052 11.2609ZM 11.9287 17.2001L 16.3215 17.2001C 16.8193 17.2001 17.2 16.8193 17.2002 16.3215L 17.2002 1.67859C 17.2002 1.18079 16.8193 0.800049 16.3215 0.800049L 1.67871 0.800049C 1.18066 0.800049 0.800049 1.18079 0.800049 1.67859L 0.800049 16.3215C 0.800049 16.8193 1.18066 17.2001 1.67871 17.2001L 8.41431 17.2001L 8.41431 11.9286L 6.07153 11.9286L 6.07153 8.41431L 8.41431 8.41431L 8.41431 6.95007C 8.41431 4.98792 9.93726 3.3186 11.8994 3.14294L 15.1501 3.14294L 15.1501 6.65723L 12.2214 6.65723C 12.0457 6.65723 11.9287 6.77429 11.9287 6.95007L 11.9287 8.41431L 14.8572 8.41431L 14.8572 11.9286L 11.9287 11.9286L 11.9287 17.2001Z"/>
+   </symbol>
+   <symbol id="twitter-icon" viewBox="0 0 18 15">
+     <path fill="#fff" d="M 17.5302 1.59489C 17.6525 1.56364 17.8052 1.59489 17.8969 1.68864C 17.9885 1.78239 18.0191 1.93864 17.9886 2.06364C 17.7136 2.96977 17.1637 3.62602 16.4915 3.96977L 16.4915 4.0634C 16.4915 10.0942 12.092 15 6.71484 15C 3.69018 15 1.24606 14.4688 0.146174 13.5627C 0.0239815 13.4377 -0.0371452 13.2814 0.0239815 13.0939C 0.0850472 12.9377 0.237818 12.8127 0.421137 12.8127C 2.22372 12.7814 3.38467 12.344 4.27069 11.8128C 2.55975 11.594 1.49041 10.7504 0.940516 9.15678C 0.879389 9.00053 0.940516 8.84428 1.06271 8.75053C 1.1849 8.65678 1.36822 8.65678 1.49041 8.71928C 1.94869 9.03178 2.40698 9.09428 2.9569 9.09428C 1.79595 8.37566 0.726618 7.18816 0.298914 5.71953C 0.268336 5.56328 0.329462 5.3759 0.451655 5.3134C 0.604426 5.21965 0.757197 5.2509 0.879389 5.34465C 1.21548 5.62578 1.58212 5.81328 2.13201 5.90703C 0.940516 4.65715 0.20727 2.81352 1.24603 0.782516L 1.42935 0.407516L 1.7348 0.720016C 3.62905 2.75102 5.37051 3.68852 8.54791 4.3134L 8.54791 4.1884C 8.54791 1.90739 10.2894 0.0325162 12.4586 0.0012662C 13.314 0.0012662 14.5055 0.626266 14.9944 0.907516C 15.0061 0.907516 15.0177 0.912033 15.0277 0.915939C 15.0438 0.922287 15.0555 0.926803 15.0555 0.907516C 15.6666 0.720016 16.3998 0.407516 17.2552 0.0325162C 17.3775 -0.0299838 17.5302 0.0012662 17.6219 0.0950162C 17.7136 0.188766 17.7441 0.313766 17.683 0.470016C 17.5302 0.907516 17.2858 1.37627 16.9192 1.81364L 17.5302 1.59489ZM 15.7354 3.73784L 15.9133 3.67741C 16.4764 3.46623 16.8025 3.01347 17.01 2.62126L 15.854 3.0136C 15.7058 3.0739 15.528 3.0136 15.4687 2.86272C 15.4094 2.71172 15.4391 2.53069 15.5576 2.44011C 16.0318 2.04778 16.3875 1.62529 16.6543 1.17265C 16.0615 1.41399 15.528 1.62529 15.0834 1.77617C 14.9055 1.83647 14.7277 1.80632 14.5499 1.71587L 14.5316 1.70573C 14.1836 1.51225 13.0853 0.901413 12.4158 0.931198C 10.6374 0.961349 9.21465 2.50053 9.21465 4.37163L 9.21465 5.2166L 8.85894 5.1563C 5.59857 4.55266 3.79049 3.67741 1.89352 1.77617C 1.00433 4.06975 2.84201 5.66936 3.46444 6.12199L 4.20541 6.66521L 3.28655 6.66521C 2.69375 6.66521 2.04168 6.6049 1.44888 6.3333C 2.10098 7.72148 3.43481 8.7476 4.56112 9.07964L 4.47219 9.68315C 4.2351 9.68315 3.99795 9.68315 3.76086 9.7133C 3.13839 9.74358 2.57525 9.74358 2.04171 9.56242C 2.63452 10.7093 3.67193 11.1922 5.36141 11.1922L 6.25061 11.1922L 5.50961 11.7354C 4.59075 12.4596 3.40515 13.1236 1.35998 13.2746C 2.3381 13.7574 4.14611 14.2101 6.84338 14.2101C 11.4647 14.2101 15.7354 9.49907 15.7354 4.2509L 15.7354 3.73784Z"/>
+   </symbol>
+   <symbol id="instagram-icon" viewBox="0 0 18 18">
+     <path id="inst-icon-border" fill="#fff" d="M 13.0326 0L 4.96729 0C 2.22827 0 0 2.22839 0 4.96741L 0 13.0326C 0 15.7717 2.22827 18 4.96729 18L 13.0326 18C 15.7717 18 18 15.7716 18 13.0326L 18 4.96741C 18.0001 2.22839 15.7717 0 13.0326 0ZM 17.0001 13.3579C 17.0001 15.3662 15.3662 17 13.3579 17L 4.64197 17C 2.63379 17.0001 1 15.3662 1 13.3579L 1 4.64209C 1 2.63391 2.63379 1 4.64197 1L 13.3578 1C 15.3661 1 17 2.63391 17 4.64209L 17.0001 13.3579Z"/>
+     <path fill="#fff" d="M 4.36182 9.00024C 4.36182 6.44275 6.4425 4.36206 9 4.36206C 11.5575 4.36206 13.6381 6.44275 13.6381 9.00024C 13.6381 11.5576 11.5575 13.6382 9 13.6382C 6.4425 13.6382 4.36182 11.5576 4.36182 9.00024ZM 13.4348 2.83411C 13.5833 2.68506 13.7898 2.59998 14 2.59998C 14.2108 2.59998 14.4174 2.68506 14.5658 2.83411C 14.7148 2.98254 14.7999 3.18909 14.7999 3.40002C 14.7999 3.61011 14.7148 3.81665 14.5658 3.96582C 14.4166 4.11414 14.2108 4.19995 14 4.19995C 13.7898 4.19995 13.5833 4.11414 13.4348 3.96582C 13.2858 3.81665 13.2 3.61023 13.2 3.40002C 13.2 3.26428 13.2355 3.13049 13.3004 3.0127C 13.3364 2.94739 13.3816 2.88708 13.4348 2.83411Z"/>
+   </symbol>
+  </svg>
+
+  <header class="page-header" id="page-top">
+    <div class="header-top">
+      <div class="container">
+        <div class="row">
+          <div class="col col-xs-5 col-sm-2 col-lg-3">
+            <a class="header-top__item header-logo" href="#">
+              <picture>
+                <source media="(min-width: 768px)" srcset="img/logo.svg">
+                <img class="header-logo__img" src="img/logo-small.svg" alt="UberEats">
+              </picture>
+            </a>
+          </div>
+          <form class="header-top__item header-delivery header-delivery--desktop" method="post" action="">
+            <div class="header-delivery__item header-delivery__item--time">
+              <label class="header-delivery__label header-delivery__label--when">When</label>
+              <button type="button" class="header-delivery__field header-delivery__field--time" type="button">ASAP</button>
+            </div>
+            <div class="header-delivery__item header-delivery__item--destination">
+              <label class="header-delivery__label header-delivery__label--to" for="destination">To</label>
+              <input id="destination" class="header-delivery__field header-delivery__field--destination" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
+            </div>
+          </form>
+          <div class="col col-xs-7 col-sm-5 col-lg-4">
+            <div class="user-links header-top__item ">
+              <div class="user-links__person">
+                <a class="user-links__btn user-links__btn--login" href="#"><span>Sign in</span></a>
+                <a class="user-links__btn user-links__btn--register" href="#"><span>Register</san></a>
+              </div>
+              <a class="user-links__basket" href="#">
+                  <svg width="20" height="22">
+                    <use xlink:href="#basket-icon"></use>
+                  <svg>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col col-xs-12">
+            <div class="header-search">
+              <form class="main-search" method="get" action="/main/search">
+                <input class="main-search__input" type="text" placeholder="Search for restaurant or cuisine" name="search-request" value>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col col-xs-12">
+            <form class="header-delivery header-delivery--mobile" method="post" action="">
+              <div class="header-delivery__item header-delivery__item--time">
+                <label class="header-delivery__label header-delivery__label--when">When</label>
+                <button type="button" class="header-delivery__field header-delivery__field--time">ASAP</button>
+              </div>
+              <div class="header-delivery__item header-delivery__item--destination">
+                <label class="header-delivery__label header-delivery__label--to" for="destination">To</label>
+                <input id="destination" class="header-delivery__field header-delivery__field--destination" type="text" placeholder="Enter the destination" name="destination" value="ul. Bolshaya Dmitrovka,22">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main class="page-content">
+    <div class="container">
+      <h1 class="page-title">Moscow restaurants</h1>
+      <section class="restaurants-list">
+        <div class="row row--wrap">
+          <div class="col col-xs-12 col-sm-6 col-lg-4">
+            <a class="restaurant-card" href="#">
+                <img class="restaurant-card__img" src="img/macdon.jpg" title="Макдональдс" alt="Доставка еды из ближайшего ресторана Макдоналдс">
+                <h2 class="restaurant-card__name">Макдоналдс — Газетный</h2>
+                <div class="restaurant-card__info restaurant-info">
+                  <span class="restaurant-info__cost">&#8381;&#8381;</span>
+                  <ul class="restaurant-info__cuisines-list">
+                    <li class="restaurant-info__cuisines-item">Бургеры</li>
+                  </ul>
+                </div>
+                <div class="restaurant-card__waiting-time">25 - 35 Мin</div>
+              </a>
+          </div>
+          <div class="col col-xs-12 col-sm-6 col-lg-4">
+            <a class="restaurant-card" href="#">
+                <img class="restaurant-card__img" src="img/dimsum.jpg" title="DimSum & Co" alt="Доставка еды из ближайшего ресторана DimSum & Co">
+                <h2 class="restaurant-card__name">DimSum & Co — ЦДМ</h2>
+                <div class="restaurant-card__info restaurant-info">
+                  <span class="restaurant-info__cost">&#8381;</span>
+                  <ul class="restaurant-info__cuisines-list">
+                    <li class="restaurant-info__cuisines-item">Японская</li>
+                    <li class="restaurant-info__cuisines-item">Китайская</li>
+                    <li class="restaurant-info__cuisines-item">Азиатская</li>
+                  </ul>
+                </div>
+                <div class="restaurant-card__waiting-time">40 - 50 Мin</div>
+              </a>
+          </div>
+          <div class="col col-xs-12 col-sm-6 col-lg-4">
+            <a class="restaurant-card" href="#">
+                <img class="restaurant-card__img" src="img/dvizok.jpg" title="ДвижОК" alt="Доставка еды из ближайшего ресторана ДвижОК">
+                <h2 class="restaurant-card__name">ДвижОК — Манежная</h2>
+                <div class="restaurant-card__info restaurant-info">
+                  <span class="restaurant-info__cost">&#8381;</span>
+                  <ul class="restaurant-info__cuisines-list">
+                    <li class="restaurant-info__cuisines-item">Американская</li>
+                    <li class="restaurant-info__cuisines-item">Европейская</li>
+                  </ul>
+                </div>
+                <div class="restaurant-card__waiting-time">35 - 45 Мin</div>
+              </a>
+          </div>
+          <div class="col col-xs-12 col-sm-6 col-lg-4">
+            <a class="restaurant-card" href="#">
+              <img class="restaurant-card__img" src="img/nia.jpg" title="НЯ — NHA" alt="Доставка еды из ближайшего ресторана НЯ — NHA">
+              <h2 class="restaurant-card__name">НЯ — NHA</h2>
+              <div class="restaurant-card__info restaurant-info">
+                <span class="restaurant-info__cost">&#8381;&#8381;</span>
+                <ul class="restaurant-info__cuisines-list">
+                  <li class="restaurant-info__cuisines-item">Вьетнамская</li>
+                  </ul>
+                </div>
+                <div class="restaurant-card__waiting-time">30 - 40 Мin</div>
+              </a>
+          </div>
+          <div class="col col-xs-12 col-sm-6 col-lg-4">
+            <a class="restaurant-card" href="#">
+              <img class="restaurant-card__img" src="img/tochkazy.jpg" title="Точка Дзы" alt="Доставка еды из ближайшего ресторана Точка Дзы">
+              <h2 class="restaurant-card__name">Точка Дзы — Цветной</h2>
+              <div class="restaurant-card__info restaurant-info">
+                <span class="restaurant-info__cost">&#8381;&#8381;</span>
+                <ul class="restaurant-info__cuisines-list">
+                    <li class="restaurant-info__cuisines-item">Вьетнамская</li>
+                  </ul>
+                </div>
+                <div class="restaurant-card__waiting-time">40 - 50 Мin</div>
+              </a>
+          </div>
+          <div class="col col-xs-12 col-sm-6 col-lg-4">
+            <a class="restaurant-card" href="#">
+              <img class="restaurant-card__img" src="img/cinnabon.jpg" title="Cinnabon" alt="Доставка еды из ближайшего ресторана Cinnabon">
+              <h2 class="restaurant-card__name">Cinnabon</h2>
+              <div class="restaurant-card__info restaurant-info">
+                <span class="restaurant-info__cost">&#8381;</span>
+                <ul class="restaurant-info__cuisines-list">
+                  <li class="restaurant-info__cuisines-item">Выпечка</li>
+                  <li class="restaurant-info__cuisines-item">Десерты</li>
+                  <li class="restaurant-info__cuisines-item">Капкейки</li>
+                </ul>
+              </div>
+                <div class="restaurant-card__waiting-time">25 - 35 Мin</div>
+              </a>
+          </div>
+          <div class="col col-xs-12 col-sm-6 col-lg-4">
+            <a class="restaurant-card" href="#">
+              <img class="restaurant-card__img" src="img/pizzelove.jpg" title="PIZZELOVE" alt="Доставка еды из ближайшего ресторана PIZZELOVE">
+              <h2 class="restaurant-card__name">PIZZELOVE</h2>
+              <div class="restaurant-card__info restaurant-info">
+                <span class="restaurant-info__cost">&#8381;&#8381;</span>
+                <ul class="restaurant-info__cuisines-list">
+                  <li class="restaurant-info__cuisines-item">Пицца</li>
+                </ul>
+              </div>
+              <div class="restaurant-card__waiting-time">15 - 25 Мin</div>
+            </a>
+          </div>
+          <div class="col col-xs-12 col-sm-6 col-lg-4">
+            <a class="restaurant-card" href="#">
+              <img class="restaurant-card__img" src="img/zucafe.jpg" title="Zю кафе" alt="Доставка еды из ближайшего ресторана Zю кафе">
+              <h2 class="restaurant-card__name">Zю кафе — Тверская</h2>
+              <div class="restaurant-card__info restaurant-info">
+                <span class="restaurant-info__cost">&#8381;&#8381;</span>
+                <ul class="restaurant-info__cuisines-list">
+                  <li class="restaurant-info__cuisines-item">Японская</li>
+                </ul>
+              </div>
+              <div class="restaurant-card__waiting-time">25 - 35 Мin</div>
+            </a>
+          </div>
+          <div class="col col-xs-12 col-sm-6 col-lg-4">
+            <a class="restaurant-card" href="#">
+              <img class="restaurant-card__img" src="img/barbqcafe.jpg" title="Bar BQ Cafe" alt="Доставка еды из ближайшего ресторана Bar BQ Cafe">
+              <h2 class="restaurant-card__name">Bar BQ Cafe — Манежная</h2>
+              <div class="restaurant-card__info restaurant-info">
+                <span class="restaurant-info__cost">&#8381;&#8381;&#8381;</span>
+                <ul class="restaurant-info__cuisines-list">
+                  <li class="restaurant-info__cuisines-item">Европейская</li>
+                </ul>
+              </div>
+              <div class="restaurant-card__waiting-time">30 - 40 Мin</div>
+            </a>
+          </div>
+        </div>
+      </section>
+  </main>
+
+  <footer class="page-footer">
+    <div class="container">
+      <div class="page-footer__item page-footer__item--footer-top">
+        <img class="footer-logo" src="img/big-logo.svg" width="192" height="21">
+      </div>
+      <div class="page-footer__item page-footer__item--customer-links">
+        <div class="row row--wrap">
+          <div class="col col-xs-12 col-sm-4">
+            <div class="lang-and-networks">
+              <form class="language-set">
+                <select class="language-set__select" id="select">
+                    <option>English</option>
+                    <option>Русский</option>
+                    <option>Deutsch</option>
+                  </select>
+              </form>
+              <div class="hashtag"><span class="hashtag-sign">#</span>UberEats</div>
+              <div class="networks">
+                <a class="networks__link networks__link--fb" href="#">
+                    <svg width="18" height="18">
+                      <use xlink:href="#facebook-icon"></use>
+                    </svg>
+                  </a>
+                <a class="networks__link networks__link--tw" href="#">
+                    <svg width="18" height="15">
+                      <use xlink:href="#twitter-icon"></use>
+                    </svg>
+                  </a>
+                <a class="networks__link networks__link--inst" href="#">
+                    <svg width="18" height="18">
+                      <use xlink:href="#instagram-icon"></use>
+                    </svg>
+                  </a>
+              </div>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-4">
+            <nav class="service-navigation">
+              <a class="service-navigation__link" href="#">About UberEats</a>
+              <a class="service-navigation__link" href="#">Become a Delivery Partner</a>
+              <a class="service-navigation__link" href="#">Become a Restaurant Partner</a>
+            </nav>
+          </div>
+          <div class="col col-xs-12 col-sm-4">
+            <nav class="service-navigation">
+              <a class="service-navigation__link" href="#">See all cities</a>
+              <a class="service-navigation__link" href="#">Pricing</a>
+              <a class="service-navigation__link" href="#">Help</a>
+              <a class="service-navigation__link" href="#">FAQs</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <div class="page-footer__item page-footer__item--apps">
+        <div class="apps">
+          <a class="apps-link" href=#>
+              <img class="apps-link__img" src="img/app_store.png" height="40" width="135">
+          </a>
+          <a class="apps-link" href=#>
+              <img class="apps-link__img" src="img/google_play.jpg" height="40" width="135">
+          </a>
+        </div>
+      </div>
+      <div class="page-footer__item page-footer__item--footer-bottom">
+        <div class="row row--wrap">
+          <div class="col col-xs-12 col-sm-4">
+            <div class="footer-bottom__item">
+              <span>&copy; 2017 Uber Technologies Inc.</span>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-4">
+            <div class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">Privacy</a>
+            </div>
+          </div>
+          <div class="col col-xs-12 col-sm-4">
+            <div class="footer-bottom__item">
+              <a class="footer-bottom__link" href="#">Terms</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="totop-btn" href="#page-top"></a>
+  </footer>
+</body>
+
+</html>
